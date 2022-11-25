@@ -8,8 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Added
 
+- Added examples from deprecated repository.
+
 ### Changed
 
 ### Fixed
 
-[unreleased]: https://github.com/TwicPics/components/compare/main...dev
+[unreleased]: https://github.com/TwicPics/components-demo-svelte3/compare/main...dev

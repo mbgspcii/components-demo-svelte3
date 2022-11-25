@@ -1,4 +1,4 @@
-import './app.css';
+import './app.scss';
 import App from './App.svelte';
 
 import { installTwicPics } from '@twicpics/components/svelte3';
