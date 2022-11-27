@@ -15,7 +15,7 @@
     </div>
     {#if codeSandBoxUrl}
       <div class="codesandbox-container">
-        <a {href} target="_blank">
+        <a {href} target="_blank" rel="noreferrer">
           <img src="https://codesandbox.io/static/img/play-codesandbox.svg" {alt} />
         </a>
       </div>

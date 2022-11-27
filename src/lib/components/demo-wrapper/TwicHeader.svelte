@@ -4,6 +4,7 @@
   const logoSrc = `${LOGOS_PATH}svelte.png`;
   const logoAlt = `Svelte logo`;
   const redirect = `https://www.twicpics.com/docs/components/svelte-3`;
+  import Github from '../../../assets/GitHub-Mark-32px.png';
 
   export let gitHubUrl = `https://github.com/TwicPics/components-demo-svelte3`;
 </script>
@@ -20,9 +21,9 @@
       <img class={logoClass} src={logoSrc} alt={logoAlt} />
     </h1>
   </a>
-  <a id="go-to-github" target="_blank" href={gitHubUrl}>
+  <a id="go-to-github" target="_blank" href={gitHubUrl} rel="noreferrer">
     <div>
-      <img src="src/assets/GitHub-Mark-32px.png" />
+      <img src={Github} alt="github logo" />
     </div>
   </a>
   <div class="tags-container">

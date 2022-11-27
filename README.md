@@ -42,30 +42,30 @@ $ yarn preview
 
 ### What is [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components)?
 
-[TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) is a __Responsive Image Service Solution__ (SaaS) that enables __on-demand responsive image generation__.
+[TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) is a **Responsive Image Service Solution** (SaaS) that enables **on-demand responsive image generation**.
 
-With [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components), developers only deal with high-resolution versions of their media while end-users receive __optimized, perfectly sized, device-adapted__ versions __delivered from a server close to them__.
+With [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components), developers only deal with high-resolution versions of their media while end-users receive **optimized, perfectly sized, device-adapted** versions **delivered from a server close to them**.
 
-[TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) acts as an __image proxy__. It requests your master image, be it on your own web server, cloud storage or DAM, then generates a __device-adapted__ version with __best-in-class compression__, delivered directly to the end-user from the __closest delivery point__ available.
+[TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) acts as an **image proxy**. It requests your master image, be it on your own web server, cloud storage or DAM, then generates a **device-adapted** version with **best-in-class compression**, delivered directly to the end-user from the **closest delivery point** available.
 
 <div id='what-is-twicpics-components'/>
 
 ### What is TwicPics Components?
 
-TwicPics Components is a __collection of web components__ that make it dead easy to unleash the power of [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) in your own projects.
+TwicPics Components is a **collection of web components** that make it dead easy to unleash the power of [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) in your own projects.
 
 Basically, TwicPics components replace `img` and `video` tags. They greatly and transparently optimize your CLS by providing LQIP (Low-Quality Image Placeholders) and Lazy Loading out of the box.
 
 Simply replace this:
 
 ```html
-  <img src="https://assets.twicpics.com/examples/football.jpg" />
+<img src="https://assets.twicpics.com/examples/football.jpg" />
 ```
 
 With this:
 
 ```html
-  <TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
+<TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
 ```
 
 Thanks to the open source [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) Components, delivering responsive images in your [Svelte3](https://svelte.dev/) projects has never been easier.
@@ -79,7 +79,7 @@ Thanks to the open source [TwicPics](https://www.twicpics.com/?utm_source=github
 The only requirement is to have a TwicPics account.
 If you don't already have one, you can easily [create your own TwicPics account for free](https://account.twicpics.com/signup).
 
-### Configuring `@twicpics/components` 
+### Configuring `@twicpics/components`
 
 TwicPics components for Svelte3 comes as an `ES module`.
 
