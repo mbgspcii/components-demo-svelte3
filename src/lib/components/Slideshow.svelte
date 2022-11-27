@@ -39,13 +39,13 @@
   };
 </script>
 
-<div class="slideshow-container">
+<div class="slideshow-container" on:mouseenter={setIsPaused} on:mouseleave={setIsPaused}>
   <button class="slick-prev slick-arrow" on:click={() => updateIndex(activeIndex - 1)}>
     &#8249;
   </button>
   <div class="twic-item">
     <div class="slideshow-inner-container">
-      <div on:mouseenter={setIsPaused} on:mouseleave={setIsPaused}>
+      <div>
         <div
           class="inner"
           style="
@@ -150,7 +150,7 @@
     position: absolute;
     height: 3rem;
     width: 3rem;
-    top: 50%;
+    top: calc(50% - 1.5rem);
     outline: 0;
     opacity: 0.5;
     padding-bottom: 5px;
