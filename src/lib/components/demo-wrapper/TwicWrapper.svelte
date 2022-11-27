@@ -1,9 +1,11 @@
 <script>
   import { default as TwicHeader } from './TwicHeader.svelte';
+
+  export let gitHubUrl = undefined;
 </script>
 
 <div id="twic-demo-wrapper" class="">
-  <TwicHeader />
+  <TwicHeader {gitHubUrl} />
   <main id="twic-demo-container">
     <slot />
   </main>

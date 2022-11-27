@@ -39,11 +39,13 @@
   ];
 </script>
 
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicFlipCards.svelte"
+>
   <div class="twic-flip-card-container">
     <TwicAbstract
       title="Flip cards"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-flip-cards-otfgj5"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicFlipCards.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Flip cards"
     >
       <p>Move your mouse over the images below.</p>

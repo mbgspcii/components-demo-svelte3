@@ -16,11 +16,13 @@
   };
 </script>
 
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicPosition.svelte"
+>
   <div class="twic-position-container">
     <TwicAbstract
       title="position property"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-position-property-xynckf"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicPosition.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Position property"
     >
       <p>

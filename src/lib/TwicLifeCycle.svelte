@@ -25,7 +25,7 @@
     console.log(state);
   }
 
-  $: imageReady = state === `error` || state === `loaded`;
+  $: imageReady = state === `error` || state === `done`;
 
   const images = [
     {

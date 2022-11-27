@@ -32,11 +32,13 @@
   };
 </script>
 
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicModal.svelte"
+>
   <div class="twic-modal-container">
     <TwicAbstract
       title="A modal revealer"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-modal-y40dsr"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicModal.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Modal"
     >
       <p>Click on the image of your choice to reveal a modal.</p>

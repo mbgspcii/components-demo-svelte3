@@ -4,11 +4,13 @@
   import { TwicImg } from '@twicpics/components/svelte3';
 </script>
 
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicBasicGrid.svelte"
+>
   <div class="twic-basic-grid-container">
     <TwicAbstract
       title="A basic example"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-basic-example-ygqef7"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicBasicGrid.svelte"
       codeSandBoxName="TwicPics x Svelte 3 - A basic example"
     >
       <p>

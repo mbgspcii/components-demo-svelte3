@@ -12,11 +12,13 @@
   };
 </script>
 
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicFocus.svelte"
+>
   <div class="twic-focus-container">
     <TwicAbstract
       title="focus property"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-focus-property-gz0kp0"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicFocus.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Focus property"
     >
       <p>

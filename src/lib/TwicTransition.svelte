@@ -21,11 +21,13 @@
 </script>
 
 <!-- demonstrates transition features -->
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicTransition.svelte"
+>
   <div class="twic-transition-container">
     <TwicAbstract
       title="transition properties"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-transition-property-t97ixk"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicTransition.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Transition property"
     >
       <p>

@@ -28,11 +28,13 @@
 </script>
 
 <!-- displays a carousel of responsive images -->
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicSlideshow.svelte"
+>
   <div class="twic-slideshow-container">
     <TwicAbstract
       title="A Picture Carousel"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-slideshow-28p9mh"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicSlideshow.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Picture Carousel"
     >
       <p>

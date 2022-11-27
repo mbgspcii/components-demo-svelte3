@@ -18,11 +18,13 @@
 </script>
 
 <!-- demonstrates ratio features -->
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicRatio.svelte"
+>
   <div class="twic-ratio-container">
     <TwicAbstract
       title="ratio property"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-template-vpou86"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicRatio.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Ratio property"
     >
       <p>

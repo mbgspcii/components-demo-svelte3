@@ -4,7 +4,7 @@
   export let codeSandBoxUrl = ``;
 
   const alt = codeSandBoxName ? ` Edit ${codeSandBoxName} ` : ` Edit on CodeSandbox`;
-  const href = `${codeSandBoxUrl}?fontsize=14&hidenavigation=1&theme=dark`;
+  const href = `${codeSandBoxUrl}?fontsize=14&hidenavigation=1`;
 </script>
 
 <div class="twic-abstract">
@@ -15,7 +15,7 @@
     </div>
     {#if codeSandBoxUrl}
       <div class="codesandbox-container">
-        <a {href}>
+        <a {href} target="_blank">
           <img src="https://codesandbox.io/static/img/play-codesandbox.svg" {alt} />
         </a>
       </div>

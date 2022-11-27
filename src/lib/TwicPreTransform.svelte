@@ -7,11 +7,13 @@
 </script>
 
 <!-- demonstrates the preTransform property -->
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicPreTransform.svelte"
+>
   <div class="twic-pretransform-container">
     <TwicAbstract
       title="preTransform property"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-pretransform-property-p07up1"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicPreTransform.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - preTransform property"
     >
       <p>

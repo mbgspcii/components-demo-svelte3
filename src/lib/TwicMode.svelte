@@ -15,11 +15,13 @@
 </script>
 
 <!-- demonstrates mode features (contain or cover) -->
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicMode.svelte"
+>
   <div class="twic-mode-container">
     <TwicAbstract
       title="mode property"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-mode-property-jdu34q"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicMode.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Mode property"
     >
       <p>

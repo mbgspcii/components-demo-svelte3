@@ -21,11 +21,13 @@
 </script>
 
 <!-- demonstrates placeholders features -->
-<TwicWrapper>
+<TwicWrapper
+  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicPlaceholder.svelte"
+>
   <div class="twic-placeholder-container">
     <TwicAbstract
       title="placeholder property"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-placeholder-property-yfbeyk"
+      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicPlaceholder.svelte&hidenavigation=1"
       codeSandBoxName="TwicPics x Svelte - Placeholder property"
     >
       <p>
