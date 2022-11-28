@@ -1,6 +1,7 @@
 <script>
   import router from 'page';
   import Home from './lib/Home.svelte';
+  import Anchor from './lib/TwicAnchor.svelte';
   import ArtDirections from './lib/TwicArtDirections.svelte';
   import BasicGrid from './lib/TwicBasicGrid.svelte';
   import FlipCards from './lib/TwicFlipCards.svelte';
@@ -22,6 +23,7 @@
   let page;
 
   router('/', () => (page = Home));
+  router('/anchor', () => (page = Anchor));
   router('/art-directions', () => (page = ArtDirections));
   router('/basic-grid', () => (page = BasicGrid));
   router('/flip-cards', () => (page = FlipCards));

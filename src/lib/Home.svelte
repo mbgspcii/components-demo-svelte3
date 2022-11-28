@@ -63,6 +63,11 @@
       title: `Properties`,
       items: [
         {
+          route: `/anchor`,
+          imgSrc: `cat_1x1.jpg`,
+          title: `anchor`
+        },
+        {
           route: `/focus`,
           imgSrc: `components/puppy.jpg`,
           title: `focus`
