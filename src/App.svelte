@@ -17,7 +17,6 @@
   import StyleDriven from './lib/TwicStyleDriven.svelte';
   import PageTemplating from './lib/TwicPageTemplating.svelte';
   import Transition from './lib/TwicTransition.svelte';
-  import LifeCycle from './lib/TwicLifeCycle.svelte';
   import ShortVideos from './lib/TwicShortVideos.svelte';
 
   let page;
@@ -28,7 +27,6 @@
   router('/flip-cards', () => (page = FlipCards));
   router('/focus', () => (page = Focus));
   router('/grid-and-zoom', () => (page = GridAndZoom));
-  router('/life-cycle', () => (page = LifeCycle));
   router('/modal', () => (page = Modal));
   router('/mode', () => (page = Mode));
   router('/placeholder', () => (page = Placeholder));

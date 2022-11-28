@@ -27,11 +27,6 @@
           title: `Grid & zoom`
         },
         {
-          route: `/life-cycle`,
-          imgSrc: `components/flip/orange-1.jpg`,
-          title: `Life cycle`
-        },
-        {
           route: `/modal`,
           imgSrc: `components/modal/seagull.jpg`,
           title: `Modal`
