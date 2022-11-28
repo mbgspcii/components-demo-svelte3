@@ -6,15 +6,17 @@
 
   let activeIndex = 0;
   let isPaused = false;
-  let interval = '';
-  const timerDuration = 3000;
+  let interval;
+  let state;
+
+  const TIMER_DURATION = 3000;
 
   onMount(() => {
     interval = setInterval(() => {
-      if (!isPaused) {
+      if (!isPaused && imageReady) {
         updateIndex(activeIndex + 1);
       }
-    }, timerDuration);
+    }, TIMER_DURATION);
   });
 
   onDestroy(() => {
@@ -37,10 +39,16 @@
   const setIsPaused = () => {
     isPaused = !isPaused;
   };
+
+  $: imageReady = state === `error` || state === `done`;
 </script>
 
 <div class="slideshow-container" on:mouseenter={setIsPaused} on:mouseleave={setIsPaused}>
-  <button class="slick-prev slick-arrow" on:click={() => updateIndex(activeIndex - 1)}>
+  <button
+    class="slick-prev slick-arrow"
+    on:click={() => updateIndex(activeIndex - 1)}
+    disabled={!imageReady}
+  >
     &#8249;
   </button>
   <div class="twic-item">
@@ -54,7 +62,12 @@
         >
           {#each images as img}
             <div class="slideshow-item">
-              <TwicImg class="twic-slideshow-responsive" src={img.url} focus={img.focus} />
+              <TwicImg
+                class="twic-slideshow-responsive"
+                bind:state
+                src={img.url}
+                focus={img.focus}
+              />
             </div>
           {/each}
         </div>
@@ -64,16 +77,24 @@
   <ul class="slick-dots">
     {#each images as img, index}
       <li class:slick-active={index === activeIndex}>
-        <button on:click={() => updateIndex(index)} />
+        <button on:click={() => updateIndex(index)} disabled={!imageReady} />
       </li>
     {/each}
   </ul>
-  <button class="slick-next slick-arrow" on:click={() => updateIndex(activeIndex + 1)}>
+  <button
+    class="slick-next slick-arrow"
+    on:click={() => updateIndex(activeIndex + 1)}
+    disabled={!imageReady}
+  >
     &#8250;
   </button>
 </div>
 
 <style lang="scss">
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
   .slideshow-container {
     position: relative;
 
