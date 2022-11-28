@@ -1,58 +1,36 @@
 <script>
-  import TwicRatio from './TwicRatio.svelte';
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
-  const containSample = [
+  const verticalConfig = [
     {
-      anchor: `top`,
-      mode: `contain`,
-      ratio: `3/4`
+      anchor: `center`
     },
     {
-      anchor: `bottom`,
-      mode: `contain`,
-      ratio: `3/4`
+      anchor: `top`
     },
     {
-      anchor: `left`,
-      mode: `contain`,
-      ratio: `4/3`
-    },
-    {
-      anchor: `right`,
-      mode: `contain`,
-      ratio: `4/3`
+      anchor: `bottom`
     }
   ];
 
-  const coverSample = [
+  const horizontalConfig = [
     {
-      anchor: `left`,
-      mode: `cover`,
-      ratio: `3/4`
+      anchor: `center`
     },
     {
-      anchor: `right`,
-      mode: `cover`,
-      ratio: `3/4`
+      anchor: `left`
     },
     {
-      anchor: `top`,
-      mode: `cover`,
-      ratio: `16/9`
-    },
-    {
-      anchor: `bottom`,
-      mode: `cover`,
-      ratio: `16/9`
+      anchor: `right`
     }
   ];
+
   let indiceConfig = 0;
 
-  $: actualContain = containSample[indiceConfig];
-  $: actualCover = coverSample[indiceConfig];
+  $: actualHorizontal = horizontalConfig[indiceConfig];
+  $: actualVertical = verticalConfig[indiceConfig];
 </script>
 
 <TwicWrapper
@@ -65,9 +43,11 @@
       codeSandBoxName="TwicPics x Svelte - Anchor property"
     >
       <p>
-        <span class="twic-code">anchor</span> property positions the image <strong>in both</strong>
-        <span class="twic-code">contain</span>
-        and <span class="twic-code">cover</span> mode.
+        <strong>
+          The <dfn title="anchor property">anchor</dfn> property positions the image in both
+          <span class="twic-code">contain</span>
+          and <span class="twic-code">cover</span> mode.
+        </strong>
       </p>
       <p>
         Accepted values are <span class="twic-code">top</span>,
@@ -76,53 +56,65 @@
         <span class="twic-code">top-right</span>, <span class="twic-code">bottom-left</span> and
         <span class="twic-code">bottom-right</span>.
       </p>
+      <p>For a more specific positionning see:</p>
+      <ul>
+        <li>
+          <a href="/position" title="Home">position</a> property in
+          <span class="twic-code">contain</span> mode
+        </li>
+        <li>
+          <a href="/focus" title="Home">focus</a> property in <span class="twic-code">cover</span> mode
+        </li>
+      </ul>
     </TwicAbstract>
     <div class="twic-testing-container">
       <button
         class="twic-button"
-        on:click={() => (indiceConfig = (indiceConfig + 1) % coverSample.length)}
+        on:click={() => (indiceConfig = (indiceConfig + 1) % horizontalConfig.length)}
       >
         Click to see anchor effect
       </button>
     </div>
     <div class="twic-grid">
       <div class="twic-item">
-        <TwicImg
-          src="cat_1x1.jpg"
-          mode={actualCover.mode}
-          ratio={actualCover.ratio}
-          anchor={actualCover.anchor}
-        />
+        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="cover" ratio="3/4" />
         <span>
           <span>
-            <span class="twic-code">anchor="{actualCover.anchor}"</span>
-            <span class="twic-code">mode="{actualCover.mode}"</span>
-            <span class="twic-code">ratio="{actualCover.ratio}"</span>
+            <span class="twic-code">anchor="{actualHorizontal.anchor}"</span>
+            <span class="twic-code">mode="cover"</span>
           </span>
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" mode={actualCover.mode} ratio={actualCover.ratio} />
-        <span>No anchor set (<span class="twic-code"> center</span> by default)</span>
-      </div>
-      <div class="twic-item">
-        <TwicImg
-          src="cat_1x1.jpg"
-          mode={actualContain.mode}
-          ratio={actualContain.ratio}
-          anchor={actualContain.anchor}
-        />
+        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="cover" ratio="4/3" />
         <span>
           <span>
-            <span class="twic-code">anchor="{actualContain.anchor}"</span>
-            <span class="twic-code">mode="{actualContain.mode}"</span>
-            <span class="twic-code">ratio="{actualContain.ratio}"</span>
+            <span>
+              <span class="twic-code">anchor="{actualVertical.anchor}"</span>
+              <span class="twic-code">mode="cover"</span>
+            </span>
           </span>
         </span>
       </div>
       <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" mode={actualContain.mode} ratio={actualContain.ratio} />
-        <span>No anchor set (<span class="twic-code"> center</span> by default)</span>
+        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="contain" ratio="4/3" />
+        <span>
+          <span>
+            <span class="twic-code">anchor="{actualHorizontal.anchor}"</span>
+            <span class="twic-code">mode="contain"</span>
+          </span>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="contain" ratio="3/4" />
+        <span>
+          <span>
+            <span>
+              <span class="twic-code">anchor="{actualVertical.anchor}"</span>
+              <span class="twic-code">mode="contain"</span>
+            </span>
+          </span>
+        </span>
       </div>
     </div>
   </div>
