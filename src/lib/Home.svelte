@@ -1,6 +1,6 @@
 <script>
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
-  import { TwicImg } from '@twicpics/components/svelte3';
+  import { TwicImg, TwicVideo } from '@twicpics/components/svelte3';
 
   const categories = [
     {
@@ -55,6 +55,12 @@
           route: `/page-templating`,
           imgSrc: `components/woman.jpg`,
           title: `Page templating`
+        },
+        {
+          route: `/shortVideos`,
+          videoSrc: `video/skater.mp4`,
+          title: `Short videos`,
+          intrinsic: '1280x720'
         }
       ]
     },
@@ -110,7 +116,11 @@
           {#each category.items as item}
             <a href={item.route}>
               <figure class="twic-item">
-                <TwicImg src={item.imgSrc} focus="auto" ratio="0.95" />
+                {#if item.imgSrc}
+                  <TwicImg src={item.imgSrc} focus="auto" ratio="0.95" />
+                {:else}
+                  <TwicVideo src={item.videoSrc} ratio="0.95" intrinsic={item.intrinsic} />
+                {/if}
                 <figcaption>
                   <p>{item.title}</p>
                 </figcaption>

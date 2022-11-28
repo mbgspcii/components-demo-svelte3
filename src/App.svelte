@@ -18,6 +18,7 @@
   import PageTemplating from './lib/TwicPageTemplating.svelte';
   import Transition from './lib/TwicTransition.svelte';
   import LifeCycle from './lib/TwicLifeCycle.svelte';
+  import ShortVideos from './lib/TwicShortVideos.svelte';
 
   let page;
 
@@ -39,6 +40,7 @@
   router('/style-driven', () => (page = StyleDriven));
   router('/transition', () => (page = Transition));
   router('/page-templating', () => (page = PageTemplating));
+  router('/shortVideos', () => (page = ShortVideos));
 
   router.start();
 </script>
