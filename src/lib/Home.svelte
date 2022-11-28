@@ -4,7 +4,7 @@
 
   const categories = [
     {
-      title: `<TwicImg> use cases`,
+      title: `Use cases`,
       items: [
         {
           route: `/art-directions`,
@@ -59,7 +59,7 @@
       ]
     },
     {
-      title: `<TwicImg> properties`,
+      title: `Properties`,
       items: [
         {
           route: `/focus`,
