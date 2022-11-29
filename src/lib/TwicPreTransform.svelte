@@ -22,7 +22,11 @@
       </p>
       <p>
         You can check the
-        <a href="https://www.twicpics.com/docs/api/transformations" target="_blank">
+        <a
+          href="https://www.twicpics.com/docs/api/transformations"
+          target="_blank"
+          rel="noreferrer"
+        >
           TwicPics documentation
         </a>
         to see the list of API transformations.
