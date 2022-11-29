@@ -4,8 +4,6 @@
   const logoSrc = `${LOGOS_PATH}svelte.png`;
   const logoAlt = `Svelte logo`;
   const redirect = `https://www.twicpics.com/docs/components/svelte-3`;
-  import Github from '../../../assets/GitHub-Mark-32px.png';
-
   export let gitHubUrl = `https://github.com/TwicPics/components-demo-svelte3`;
 </script>
 
@@ -21,11 +19,9 @@
       <img class={logoClass} src={logoSrc} alt={logoAlt} />
     </h1>
   </a>
-  <a id="go-to-github" target="_blank" href={gitHubUrl} rel="noreferrer">
-    <div>
-      <img src={Github} alt="github logo" />
-    </div>
-  </a>
+  <div class="ribbon">
+    <a target="_blank" href={gitHubUrl} rel="noreferrer">GitHub</a>
+  </div>
   <div class="tags-container">
     <div class="tag">@twicpics-components</div>
     <a
@@ -140,6 +136,33 @@
         width: 20px;
         height: 20px;
       }
+    }
+    .ribbon {
+      background-color: $deep-purple;
+      overflow: hidden;
+      white-space: nowrap;
+      position: absolute;
+      right: -38px;
+      top: 16px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-box-shadow: 0 0 10px #888;
+      -moz-box-shadow: 0 0 10px #888;
+      box-shadow: 0 0 10px #888;
+    }
+    .ribbon a {
+      border: 1px solid darken($deep-purple, 25);
+      color: #fff;
+      display: block;
+      font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 1px 0;
+      padding: 10px 50px;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 0 0 5px #444;
     }
   }
 </style>
