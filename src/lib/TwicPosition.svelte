@@ -43,6 +43,13 @@
         <span class="twic-code"> left</span>, and
         <span class="twic-code"> right</span>, but all valid CSS position values are valid.
       </p>
+      <p>
+        If you only need border-based positionning, you can also use <a
+          href="/anchor"
+          target="_blank"
+          rel="noreferrer">anchor</a
+        > property.
+      </p>
     </TwicAbstract>
     <div class="twic-testing-container">
       <button class="twic-button" on:click={onChangePosition}>

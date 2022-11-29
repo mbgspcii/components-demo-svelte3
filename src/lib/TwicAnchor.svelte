@@ -49,6 +49,17 @@
           and <span class="twic-code">cover</span> mode.
         </strong>
       </p>
+      It allows to:
+      <ul>
+        <li>
+          position the letterboxed image in its container in <span class="twic-code">contain</span> mode.
+        </li>
+        <li>
+          determine what should be visible when the image is cropped in <span class="twic-code"
+            >cover</span
+          > mode.
+        </li>
+      </ul>
       <p>
         Accepted values are <span class="twic-code">top</span>,
         <span class="twic-code">bottom</span>, <span class="twic-code">left</span>,
@@ -56,16 +67,15 @@
         <span class="twic-code">top-right</span>, <span class="twic-code">bottom-left</span> and
         <span class="twic-code">bottom-right</span>.
       </p>
-      <p>For a more specific positionning see:</p>
-      <ul>
-        <li>
-          <a href="/position" title="Home">position</a> property in
-          <span class="twic-code">contain</span> mode
-        </li>
-        <li>
-          <a href="/focus" title="Home">focus</a> property in <span class="twic-code">cover</span> mode
-        </li>
-      </ul>
+      <p>
+        For a more specific positionning see <a href="/position" target="_blank" rel="noreferrer"
+          >position</a
+        >
+        or <a href="/focus" target="_blank" rel="noreferrer">focus</a>
+        properties in for
+        <span class="twic-code">contain</span> or
+        <span class="twic-code">cover</span> mode respectively.
+      </p>
     </TwicAbstract>
     <div class="twic-testing-container">
       <button
@@ -76,26 +86,6 @@
       </button>
     </div>
     <div class="twic-grid">
-      <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="cover" ratio="3/4" />
-        <span>
-          <span>
-            <span class="twic-code">anchor="{actualHorizontal.anchor}"</span>
-            <span class="twic-code">mode="cover"</span>
-          </span>
-        </span>
-      </div>
-      <div class="twic-item">
-        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="cover" ratio="4/3" />
-        <span>
-          <span>
-            <span>
-              <span class="twic-code">anchor="{actualVertical.anchor}"</span>
-              <span class="twic-code">mode="cover"</span>
-            </span>
-          </span>
-        </span>
-      </div>
       <div class="twic-item">
         <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="contain" ratio="4/3" />
         <span>
@@ -112,6 +102,26 @@
             <span>
               <span class="twic-code">anchor="{actualVertical.anchor}"</span>
               <span class="twic-code">mode="contain"</span>
+            </span>
+          </span>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="cover" ratio="3/4" />
+        <span>
+          <span>
+            <span class="twic-code">anchor="{actualHorizontal.anchor}"</span>
+            <span class="twic-code">mode="cover"</span>
+          </span>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg src="cat_1x1.jpg" anchor={actualVertical.anchor} mode="cover" ratio="4/3" />
+        <span>
+          <span>
+            <span>
+              <span class="twic-code">anchor="{actualVertical.anchor}"</span>
+              <span class="twic-code">mode="cover"</span>
             </span>
           </span>
         </span>

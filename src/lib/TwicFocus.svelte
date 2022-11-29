@@ -52,6 +52,11 @@
           will be chosen automagically for you!
         </li>
       </ul>
+      <p>
+        If you only need border-based positionning (<span class="twic-code">top</span>,
+        <span class="twic-code">bottom</span>, etc), use
+        <a href="/anchor" target="_blank" rel="noreferrer">anchor</a> instead.
+      </p>
     </TwicAbstract>
 
     <div class="twic-grid">
