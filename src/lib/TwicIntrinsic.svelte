@@ -17,9 +17,9 @@
         </p>
         <p>It prevents image or video upscaling and limits the number of generated variants</p>
         <p>
-          Especially handy for <strong>hero images and hero videos</strong>: these full width and/or
-          full height elements tend to generate a lot of variants if left unchecked which can
-          seriously hinder cross-device caching..
+          Especially recommended for <a href="/hero" target="_blank" rel="noreferrer"
+            >hero images and videos</a
+          >.
         </p>
       </TwicAbstract>
       <div class="hero">
