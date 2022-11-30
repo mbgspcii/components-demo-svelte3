@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
   const imgUrl = `components/man-hiding-his-hands.jpg`;
@@ -11,8 +12,8 @@
   <div class="twic-pretransform-container">
     <TwicAbstract title="preTransform property" codeSandBoxUrl="src/lib/TwicPreTransform.svelte">
       <p>
-        <span class="twic-code">preTransform</span> is a slash-separated list of TwicPics API transformations
-        that perform before the automatic resizing of the image.
+        <Code>preTransform</Code> is a slash-separated list of TwicPics API transformations that perform
+        before the automatic resizing of the image.
       </p>
       <p>
         You can check the
@@ -26,38 +27,38 @@
         to see the list of API transformations.
       </p>
       <p>
-        If you set the <span class="twic-code">focus</span> property, it will apply before all
-        transformations of the <span class="twic-code">preTransform</span> property.
+        If you set the <Code>focus</Code> property, it will apply before all transformations of the <Code
+          >preTransform</Code
+        > property.
       </p>
       <p>
-        Be aware that using <span class="twic-code">preTransform</span> can lead to unexpected results,
-        so use with caution!
+        Be aware that using <Code>preTransform</Code> can lead to unexpected results, so use with caution!
       </p>
     </TwicAbstract>
     <div class="twic-grid">
       <div class="twic-item">
         <TwicImg src={imgUrl} />
         <span>
-          No <span class="twic-code">preTransform</span>
+          No <Code>preTransform</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} preTransform="crop=600x400" />
         <span>
-          <span class="twic-code">preTransform="crop=600x400"</span>
+          <Code>preTransform="crop=600x400"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} focus="100px100p" preTransform="crop=1400x1200" />
         <span>
-          <span class="twic-code">focus="100px100p"</span>
-          and <span class="twic-code">preTransform="crop=1400x1200"</span>
+          <Code>focus="100px100p"</Code>
+          and <Code>preTransform="crop=1400x1200"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} preTransform="flip=x" />
         <span>
-          <span class="twic-code">preTransform="flip=x"</span>
+          <Code>preTransform="flip=x"</Code>
         </span>
       </div>
     </div>

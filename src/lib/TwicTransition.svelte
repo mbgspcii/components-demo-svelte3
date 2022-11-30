@@ -2,6 +2,7 @@
   import { TwicImg } from '@twicpics/components/svelte3';
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
 
   const imgUrl = `components/peacock.jpg`;
   let showTransitions = false;
@@ -32,30 +33,31 @@
       </p>
       <ul>
         <li>
-          <span class="twic-code">transition</span>: determines how the image will be revealed once
-          loaded (default:
-          <span class="twic-code">fade</span>). The possible values are:
+          <Code>transition</Code>: determines how the image will be revealed once loaded (default:
+          <Code>fade</Code>). The possible values are:
           <br />
-          - <span class="twic-code">fade</span>, for a
+          - <Code>fade</Code>, for a
           <em>fade in</em> effect<br />
-          - <span class="twic-code">zoom</span>, for a
+          - <Code>zoom</Code>, for a
           <em>zoom</em> effect<br />
-          - <span class="twic-code">fade+zoom</span>, for both
+          - <Code>fade+zoom</Code>, for both
           <em>fade</em> and <em>zoom</em> effects<br />
-          - or <span class="twic-code">none</span>, for no transition
+          - or <Code>none</Code>, for no transition
         </li>
         <li>
-          <span class="twic-code">transitionDelay</span>: transition delay of the transition effect
-          (default: <span class="twic-code">0ms</span>).
+          <Code>transitionDelay</Code>: transition delay of the transition effect (default: <Code
+            >0ms</Code
+          >).
         </li>
         <li>
-          <span class="twic-code">transitionDuration</span>: duration of the transition effect
-          (default: <span class="twic-code">400ms</span>).
+          <Code>transitionDuration</Code>: duration of the transition effect (default: <Code
+            >400ms</Code
+          >).
         </li>
         <li>
-          <span class="twic-code">transitionTimingFunction</span>: CSS timing function applied to
-          the transition effect (default:
-          <span class="twic-code">ease</span>).
+          <Code>transitionTimingFunction</Code>: CSS timing function applied to the transition
+          effect (default:
+          <Code>ease</Code>).
         </li>
       </ul>
     </TwicAbstract>
@@ -72,31 +74,31 @@
       <div class="twic-item">
         <TwicImg src={imgUrl} transition="none" placeholder="preview" />
         <span>
-          <span class="twic-code">transition="none"</span>
+          <Code>transition="none"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} transition="zoom" />
         <span>
-          <span class="twic-code">transition="zoom"</span>
+          <Code>transition="zoom"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} transition="fade" />
         <span>
-          <span class="twic-code">transition="fade"</span>
+          <Code>transition="fade"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} transition="fade+zoom" />
         <span>
-          <span class="twic-code">transition="fade+zoom"</span>
+          <Code>transition="fade+zoom"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} transitionDuration="2000ms" placeholder="preview" />
         <span>
-          <span class="twic-code">transitionDuration="2000ms"</span>
+          <Code>transitionDuration="2000ms"</Code>
         </span>
       </div>
       <div class="twic-item">
@@ -107,8 +109,8 @@
           placeholder="preview"
         />
         <span>
-          <span class="twic-code">transitionDuration="2000ms"</span>
-          and <span class="twic-code">transitionTimingFunction="linear"</span>
+          <Code>transitionDuration="2000ms"</Code>
+          and <Code>transitionTimingFunction="linear"</Code>
         </span>
       </div>
       <div class="twic-item">
@@ -119,7 +121,7 @@
           placeholder="preview"
         />
         <span>
-          <span class="twic-code">transitionDelay="2000ms"</span>
+          <Code>transitionDelay="2000ms"</Code>
         </span>
       </div>
     </div>

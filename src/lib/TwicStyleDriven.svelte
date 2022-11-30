@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
   const imgUrl = `components/horse.jpg`;
@@ -11,87 +12,87 @@
     <TwicAbstract title="CSS style driven" codeSandBoxUrl="src/lib/TwicStyleDriven.svelte">
       <p>You can set up the TwicPics components using pure CSS and the power of CSS variables.</p>
     </TwicAbstract>
-    <h2>1. Display ratio with <span class="twic-code">--twic-ratio</span></h2>
+    <h2>1. Display ratio with <Code>--twic-ratio</Code></h2>
     <div class="twic-grid">
       <div class="twic-item landscape">
         <TwicImg src={imgUrl} />
         <span
           >class
-          <span class="twic-code">landscape</span>
+          <Code>landscape</Code>
         </span>
       </div>
       <div class="twic-item square">
         <TwicImg src={imgUrl} />
         <span
           >class
-          <span class="twic-code">square</span>
+          <Code>square</Code>
         </span>
       </div>
       <div class="twic-item portrait">
         <TwicImg src={imgUrl} />
         <span
           >class
-          <span class="twic-code">portrait</span>
+          <Code>portrait</Code>
         </span>
       </div>
     </div>
     <h2>
-      2. Class combination: <span class="twic-code">object-fit</span> and
-      <span class="twic-code"> position</span> with
-      <span class="twic-code">--twic-mode</span> and
-      <span class="twic-code"> twic-position</span>
+      2. Class combination: <Code>object-fit</Code> and
+      <Code>position</Code> with
+      <Code>--twic-mode</Code> and
+      <Code>twic-position</Code>
     </h2>
     <div class="twic-grid">
       <div class="twic-item contain left">
         <TwicImg src={imgUrl} ratio="16/9" />
         <span
           >class
-          <span class="twic-code">contain</span>
+          <Code>contain</Code>
           & class
-          <span class="twic-code">left</span>
+          <Code>left</Code>
         </span>
       </div>
       <div class="twic-item contain right">
         <TwicImg src={imgUrl} ratio="16/9" />
         <span
           >class
-          <span class="twic-code">contain</span>
+          <Code>contain</Code>
           & class
-          <span class="twic-code">right</span>
+          <Code>right</Code>
         </span>
       </div>
       <div class="twic-item cover">
         <TwicImg src={imgUrl} focus="50px100p" ratio="16/9" />
         <span
           >class
-          <span class="twic-code">cover</span>
+          <Code>cover</Code>
         </span>
       </div>
     </div>
     <h2>
       3. Other classical settings (here with
-      <span class="twic-code">width</span>)
+      <Code>width</Code>)
     </h2>
     <div class="twic-grid">
       <div class="twic-item lg">
         <TwicImg src={imgUrl} />
         <span
           >class
-          <span class="twic-code">lg</span>
+          <Code>lg</Code>
         </span>
       </div>
       <div class="twic-item md">
         <TwicImg src={imgUrl} />
         <span
           >class
-          <span class="twic-code">md</span>
+          <Code>md</Code>
         </span>
       </div>
       <div class="twic-item sm">
         <TwicImg src={imgUrl} />
         <span
           >class
-          <span class="twic-code">sm</span>
+          <Code>sm</Code>
         </span>
       </div>
     </div>

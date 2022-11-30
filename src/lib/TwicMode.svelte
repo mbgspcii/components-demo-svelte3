@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
   const imgUrl = `components/fox.jpg`;
@@ -28,11 +29,11 @@
       <p>Here are the two accepted values:</p>
       <ul>
         <li>
-          <span class="twic-code">cover</span>:
+          <Code>cover</Code>:
           <span> the image fills the area and is cropped accordingly.</span>
         </li>
         <li>
-          <span class="twic-code">contain</span>:
+          <Code>contain</Code>:
           <span> the image sits inside the area with no cropping.</span>
         </li>
       </ul>
@@ -44,23 +45,23 @@
         </button>
         <TwicImg src={finalImgUrl} mode={modeValues[modeIndex]} />
         <span>
-          <span class="twic-code">mode="{modeValues[modeIndex]}"</span>
+          <Code>mode="{modeValues[modeIndex]}"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} />
-        <span>No mode set (<span class="twic-code">cover</span> by default)</span>
+        <span>No mode set (<Code>cover</Code> by default)</span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} mode="cover" />
         <span>
-          <span class="twic-code">mode="cover"</span>
+          <Code>mode="cover"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} mode="contain" />
         <span>
-          <span class="twic-code">mode="contain"</span>
+          <Code>mode="contain"</Code>
         </span>
       </div>
     </div>

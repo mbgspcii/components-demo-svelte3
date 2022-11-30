@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
   let srcIsSet = false;
@@ -48,7 +49,7 @@
       <p>
         When you develop the page template and can't or don't want to integrate your images at this
         first stage, it is possible
-        <br /> not to assign a value to the <span class="twic-code">src</span> property.
+        <br /> not to assign a value to the <Code>src</Code> property.
       </p>
       <p>
         In this case, TwicPics components will generate a default red placeholder, which displays

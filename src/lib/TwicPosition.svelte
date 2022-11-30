@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
   const landscapeImgUrl = `components/position/horse.jpg`;
@@ -20,21 +21,21 @@
   <div class="twic-position-container">
     <TwicAbstract title="position property" codeSandBoxUrl="src/lib/TwicPosition.svelte">
       <p>
-        In <span class="twic-code">contain</span> mode,
+        In <Code>contain</Code> mode,
         <strong>
           the <dfn>position</dfn> property changes the location of the image inside the area of the component.
         </strong>
       </p>
       <p>
         The syntax is the same as for CSS position properties (e.g.
-        <span class="twic-code"> background-position</span> or
-        <span class="twic-code"> object-position</span>).
+        <Code>background-position</Code> or
+        <Code>object-position</Code>).
       </p>
       <p>
-        Useful values are <span class="twic-code"> top</span>,
-        <span class="twic-code"> bottom</span>,
-        <span class="twic-code"> left</span>, and
-        <span class="twic-code"> right</span>, but all valid CSS position values are valid.
+        Useful values are <Code>top</Code>,
+        <Code>bottom</Code>,
+        <Code>left</Code>, and
+        <Code>right</Code>, but all valid CSS position values are valid.
       </p>
       <p>
         If you only need border-based positionning, you can also use <a
@@ -58,7 +59,7 @@
           position={verticalPositionArray[verticalPositionIndex]}
         />
         <span>
-          <span class="twic-code">position="{verticalPositionArray[verticalPositionIndex]}"</span>
+          <Code>position="{verticalPositionArray[verticalPositionIndex]}"</Code>
         </span>
       </div>
       <div class="twic-item">
@@ -76,11 +77,11 @@
       </div>
       <div class="twic-item">
         <TwicImg src={landscapeImgUrl} mode="contain" placeholder="none" />
-        <span>No position set (<span class="twic-code"> center</span> by default)</span>
+        <span>No position set (<Code>center</Code> by default)</span>
       </div>
       <div class="twic-item">
         <TwicImg src={portraitImgUrl} mode="contain" placeholder="none" />
-        <span>No position set (<span class="twic-code"> center</span> by default)</span>
+        <span>No position set (<Code>center</Code> by default)</span>
       </div>
     </div>
   </div>

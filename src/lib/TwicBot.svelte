@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
   let indiceConfig = 0;
@@ -49,7 +50,7 @@
         >.
       </p>
       <p>
-        In the example bellow, <span class="twic-code">bot</span> has been set to "cover=400x400".
+        In the example bellow, <Code>bot</Code> has been set to "cover=400x400".
       </p>
       <p>
         While regular visitors will receive different variants depending on their browsing context,

@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 
   const imgUrl = `components/woman-and-winter.jpg`;
@@ -31,19 +32,19 @@
       <ul>
         <li>
           a ratio expression of the form width/height like
-          <span class="twic-code">4/3</span>,
-          <span class="twic-code">16/9</span>, or
-          <span class="twic-code">1/1</span>.
+          <Code>4/3</Code>,
+          <Code>16/9</Code>, or
+          <Code>1/1</Code>.
         </li>
         <li>
           a number that is the result of such an expression like
-          <span class="twic-code">1.85</span>,
-          <span class="twic-code">2</span>, or
-          <span class="twic-code">0.5</span>.
+          <Code>1.85</Code>,
+          <Code>2</Code>, or
+          <Code>0.5</Code>.
         </li>
       </ul>
       <p>
-        A square area (<span class="twic-code"> ratio="1"</span>) will be created by default.
+        A square area (<Code>ratio="1"</Code>) will be created by default.
       </p>
     </TwicAbstract>
     <div class="twic-testing-container">
@@ -64,7 +65,7 @@
           {#if !ratioValues[ratioIndex]}
             - default ratio
           {/if}
-          (mode is <span class="twic-code">cover</span>)
+          (mode is <Code>cover</Code>)
         </span>
       </div>
       <div class="twic-item">
@@ -76,7 +77,7 @@
           {#if !ratioValues[ratioIndex]}
             - default ratio
           {/if}
-          (mode is <span class="twic-code">contain</span>)
+          (mode is <Code>contain</Code>)
         </span>
       </div>
     </div>

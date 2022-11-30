@@ -1,6 +1,7 @@
 <script>
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
+  import Code from './components/Code.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
 </script>
 
@@ -16,19 +17,19 @@
       Here the properties used in this example:
       <ul>
         <li>
-          <span class="twic-code">ratio</span>:
+          <Code>ratio</Code>:
           <span> determines the value of the width/height ratio of the image display area.</span>
         </li>
         <li>
-          <span class="twic-code">mode</span>:
+          <Code>mode</Code>:
           <span>determines if the image fills or sits inside the area.</span>
         </li>
         <li>
-          <span class="twic-code">focus</span>:
+          <Code>focus</Code>:
           <span>changes the focus point coordinates of the image.</span>
         </li>
         <li>
-          <span class="twic-code">placeholder</span>:
+          <Code>placeholder</Code>:
           <span>helps optimize your CLS and implement the LQIP technique.</span>
         </li>
       </ul>
@@ -41,23 +42,23 @@
       <div class="twic-item">
         <TwicImg src="/football.jpg" ratio="16/9" mode="cover" placeholder="meancolor" />
         <span>
-          <span class="twic-code">ratio="16/9"</span> &
-          <span class="twic-code">mode="cover"</span>: the image fills the area
+          <Code>ratio="16/9"</Code> &
+          <Code>mode="cover"</Code>: the image fills the area
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src="/football.jpg" step="100" mode="contain" ratio="16/9" />
         <span>
-          <span class="twic-code">ratio="16/9"</span> &
-          <span class="twic-code">mode="contain"</span>: the image sits inside the area
+          <Code>ratio="16/9"</Code> &
+          <Code>mode="contain"</Code>: the image sits inside the area
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src="/football.jpg" step="100" focus="auto" ratio="2/3" placeholder="maincolor" />
         <span>
-          <span class="twic-code">ratio="2/3"</span>,
-          <span class="twic-code">mode="contain"</span> &
-          <span class="twic-code">focus="auto"</span>
+          <Code>ratio="2/3"</Code>,
+          <Code>mode="contain"</Code> &
+          <Code>focus="auto"</Code>
         </span>
       </div>
     </div>

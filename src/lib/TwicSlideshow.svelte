@@ -2,6 +2,7 @@
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
   import Slideshow from './components/Slideshow.svelte';
+  import Code from './components/Code.svelte';
 
   const images = [
     {
@@ -35,7 +36,7 @@
         Use TwicPics for automatic lazy-loading, CLS optimization and art directions adaptation.
       </p>
       <p>
-        Monitor the loading status of your media with <span class="twic-code">state</span> property value.
+        Monitor the loading status of your media with <Code>state</Code> property value.
       </p>
       <p>
         <strong>Change the width of your browser</strong> to see the image aspect-ratio adapt according

@@ -35,19 +35,19 @@
         are reserved in the page before the images are actually loaded.
       </p>
       <p>
-        The <span class="twic-code"> placeholder </span> values can be:
-        <span class="twic-code">preview</span>,
-        <span class="twic-code"> meancolor </span>,
-        <span class="twic-code"> maincolor </span> or
-        <span class="twic-code"> none </span>.
+        The <Code>placeholder</Code> values can be:
+        <Code>preview</Code>,
+        <Code>meancolor</Code>,
+        <Code>maincolor</Code> or
+        <Code>none</Code>.
       </p>
       <p>
         The browser is told to load a SVG version as a backgroung image first, then to replace it
         with the full version later on.
       </p>
       <p>
-        When set to <span class="twic-code">preview</span> (the default value), a blurry version of your
-        image is used as a background image.
+        When set to <Code>preview</Code> (the default value), a blurry version of your image is used
+        as a background image.
       </p>
     </TwicAbstract>
     <div class="twic-testing-container">
@@ -59,26 +59,26 @@
       <div class="twic-item">
         <TwicImg src={imgUrl} placeholder="preview" />
         <span>
-          <span class="twic-code">placeholder="preview"</span>
+          <Code>placeholder="preview"</Code>
           (default value)
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} placeholder="meancolor" />
         <span>
-          <span class="twic-code">placeholder="meancolor"</span>
+          <Code>placeholder="meancolor"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} placeholder="maincolor" />
         <span>
-          <span class="twic-code">placeholder="maincolor"</span>
+          <Code>placeholder="maincolor"</Code>
         </span>
       </div>
       <div class="twic-item">
         <TwicImg src={imgUrl} placeholder="none" />
         <span>
-          <span class="twic-code">placeholder="none"</span>
+          <Code>placeholder="none"</Code>
         </span>
       </div>
     </div>

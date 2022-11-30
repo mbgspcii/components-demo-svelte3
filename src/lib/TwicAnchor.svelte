@@ -2,6 +2,7 @@
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
+  import Code from './components/Code.svelte';
 
   const verticalConfig = [
     {
@@ -39,14 +40,14 @@
       <p>
         <strong>
           The <dfn>anchor</dfn> property positions the image in both
-          <span class="twic-code">contain</span>
-          and <span class="twic-code">cover</span> mode.
+          <Code>contain</Code>
+          and <Code>cover</Code> mode.
         </strong>
       </p>
       It allows to:
       <ul>
         <li>
-          position the letterboxed image in its container in <span class="twic-code">contain</span> mode.
+          position the letterboxed image in its container in <Code>contain</Code> mode.
         </li>
         <li>
           determine what should be visible when the image is cropped in <span class="twic-code"
@@ -55,11 +56,11 @@
         </li>
       </ul>
       <p>
-        Accepted values are <span class="twic-code">top</span>,
-        <span class="twic-code">bottom</span>, <span class="twic-code">left</span>,
-        <span class="twic-code">right</span>, <span class="twic-code">top-left</span>,
-        <span class="twic-code">top-right</span>, <span class="twic-code">bottom-left</span> and
-        <span class="twic-code">bottom-right</span>.
+        Accepted values are <Code>top</Code>,
+        <Code>bottom</Code>, <Code>left</Code>,
+        <Code>right</Code>, <Code>top-left</Code>,
+        <Code>top-right</Code>, <Code>bottom-left</Code> and
+        <Code>bottom-right</Code>.
       </p>
       <p>
         For a more specific positionning see <a href="/position" target="_blank" rel="noreferrer"
@@ -67,8 +68,8 @@
         >
         or <a href="/focus" target="_blank" rel="noreferrer">focus</a>
         properties in for
-        <span class="twic-code">contain</span> or
-        <span class="twic-code">cover</span> mode respectively.
+        <Code>contain</Code> or
+        <Code>cover</Code> mode respectively.
       </p>
     </TwicAbstract>
     <div class="twic-testing-container">
@@ -84,8 +85,8 @@
         <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="contain" ratio="4/3" />
         <span>
           <span>
-            <span class="twic-code">anchor="{actualHorizontal.anchor}"</span>
-            <span class="twic-code">mode="contain"</span>
+            <Code>anchor="{actualHorizontal.anchor}"</Code>
+            <Code>mode="contain"</Code>
           </span>
         </span>
       </div>
@@ -94,8 +95,8 @@
         <span>
           <span>
             <span>
-              <span class="twic-code">anchor="{actualVertical.anchor}"</span>
-              <span class="twic-code">mode="contain"</span>
+              <Code>anchor="{actualVertical.anchor}"</Code>
+              <Code>mode="contain"</Code>
             </span>
           </span>
         </span>
@@ -104,8 +105,8 @@
         <TwicImg src="cat_1x1.jpg" anchor={actualHorizontal.anchor} mode="cover" ratio="3/4" />
         <span>
           <span>
-            <span class="twic-code">anchor="{actualHorizontal.anchor}"</span>
-            <span class="twic-code">mode="cover"</span>
+            <Code>anchor="{actualHorizontal.anchor}"</Code>
+            <Code>mode="cover"</Code>
           </span>
         </span>
       </div>
@@ -114,8 +115,8 @@
         <span>
           <span>
             <span>
-              <span class="twic-code">anchor="{actualVertical.anchor}"</span>
-              <span class="twic-code">mode="cover"</span>
+              <Code>anchor="{actualVertical.anchor}"</Code>
+              <Code>mode="cover"</Code>
             </span>
           </span>
         </span>
