@@ -8,6 +8,8 @@
   import FlipCards from './lib/TwicFlipCards.svelte';
   import Focus from './lib/TwicFocus.svelte';
   import GridAndZoom from './lib/TwicGridAndZoom.svelte';
+  import Intrinsic from './lib/TwicIntrinsic.svelte';
+  import Hero from './lib/TwicHero.svelte';
   import Modal from './lib/TwicModal.svelte';
   import Mode from './lib/TwicMode.svelte';
   import Placeholder from './lib/TwicPlaceholder.svelte';
@@ -31,6 +33,8 @@
   router('/flip-cards', () => (page = FlipCards));
   router('/focus', () => (page = Focus));
   router('/grid-and-zoom', () => (page = GridAndZoom));
+  router('/hero', () => (page = Hero));
+  router('/intrinsic', () => (page = Intrinsic));
   router('/modal', () => (page = Modal));
   router('/mode', () => (page = Mode));
   router('/placeholder', () => (page = Placeholder));

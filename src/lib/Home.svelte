@@ -27,6 +27,11 @@
           title: `Grid & zoom`
         },
         {
+          route: `/hero`,
+          imgSrc: `components/goldenGate.jpg`,
+          title: `Hero image`
+        },
+        {
           route: `/modal`,
           imgSrc: `components/modal/seagull.jpg`,
           title: `Modal`
@@ -76,6 +81,11 @@
           route: `/focus`,
           imgSrc: `components/puppy.jpg`,
           title: `focus`
+        },
+        {
+          route: `/intrinsic`,
+          imgSrc: `components/fantasy.jpg`,
+          title: `intrinsic`
         },
         {
           route: `/mode`,
