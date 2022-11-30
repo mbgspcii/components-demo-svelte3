@@ -39,14 +39,11 @@
 </script>
 
 <!-- demonstrates the default red placeholder when the property src is not set -->
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicPageTemplating.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicPageTemplating.svelte">
   <div class="twic-working-without-images-container">
     <TwicAbstract
       title="Prepare your page template"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicPageTemplating.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Page Templating"
+      codeSandBoxUrl="src/lib/TwicPageTemplating.svelte"
     >
       <p>
         When you develop the page template and can't or don't want to integrate your images at this

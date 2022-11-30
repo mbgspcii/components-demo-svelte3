@@ -21,15 +21,9 @@
 </script>
 
 <!-- demonstrates placeholders features -->
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicPlaceholder.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicPlaceholder.svelte">
   <div class="twic-placeholder-container">
-    <TwicAbstract
-      title="placeholder property"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicPlaceholder.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Placeholder property"
-    >
+    <TwicAbstract title="placeholder property" codeSandBoxUrl="src/lib/TwicPlaceholder.svelte">
       <p>
         <strong>
           The <dfn title="placeholder property">placeholder</dfn> property helps you optimize user experience,

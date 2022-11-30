@@ -16,15 +16,9 @@
   };
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicPosition.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicPosition.svelte">
   <div class="twic-position-container">
-    <TwicAbstract
-      title="position property"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicPosition.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Position property"
-    >
+    <TwicAbstract title="position property" codeSandBoxUrl="src/lib/TwicPosition.svelte">
       <p>
         In <span class="twic-code">contain</span> mode,
         <strong>

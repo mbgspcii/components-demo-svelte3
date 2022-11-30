@@ -28,15 +28,9 @@
 </script>
 
 <!-- displays a carousel of responsive images -->
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicSlideshow.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicSlideshow.svelte">
   <div class="twic-slideshow-container">
-    <TwicAbstract
-      title="A Picture Carousel"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicSlideshow.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Picture Carousel"
-    >
+    <TwicAbstract title="A Picture Carousel" codeSandBoxUrl="src/lib/TwicSlideshow.svelte">
       <p>
         Use TwicPics for automatic lazy-loading, CLS optimization and art directions adaptation.
       </p>

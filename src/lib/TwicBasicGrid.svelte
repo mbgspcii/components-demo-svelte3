@@ -4,15 +4,9 @@
   import { TwicImg } from '@twicpics/components/svelte3';
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicBasicGrid.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicBasicGrid.svelte">
   <div class="twic-basic-grid-container">
-    <TwicAbstract
-      title="A basic example"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicBasicGrid.svelte"
-      codeSandBoxName="TwicPics x Svelte 3 - A basic example"
-    >
+    <TwicAbstract title="A basic example" codeSandBoxUrl="src/lib/TwicBasicGrid.svelte">
       <p>
         TwicPics is a Responsive Image Service Solution (SaaS) that enables on-demand responsive
         image generation.

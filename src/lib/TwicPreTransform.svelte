@@ -7,15 +7,9 @@
 </script>
 
 <!-- demonstrates the preTransform property -->
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicPreTransform.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicPreTransform.svelte">
   <div class="twic-pretransform-container">
-    <TwicAbstract
-      title="preTransform property"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicPreTransform.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - preTransform property"
-    >
+    <TwicAbstract title="preTransform property" codeSandBoxUrl="src/lib/TwicPreTransform.svelte">
       <p>
         <span class="twic-code">preTransform</span> is a slash-separated list of TwicPics API transformations
         that perform before the automatic resizing of the image.

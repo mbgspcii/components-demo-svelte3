@@ -1,10 +1,16 @@
 <script>
   export let title;
-  export let codeSandBoxName = ``;
-  export let codeSandBoxUrl = ``;
+  export let codeSandBoxUrl = undefined;
 
-  const alt = codeSandBoxName ? ` Edit ${codeSandBoxName} ` : ` Edit on CodeSandbox`;
-  const href = `${codeSandBoxUrl}?fontsize=14&hidenavigation=1`;
+  let _codeSandBoxUrl = undefined;
+  let href = undefined;
+
+  const CODESANDBOX = `https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=`;
+  
+  $: if (codeSandBoxUrl) {
+    _codeSandBoxUrl = `/${codeSandBoxUrl}`;
+    href = `${CODESANDBOX}${encodeURIComponent(codeSandBoxUrl)}?hidenavigation=1`;
+  }
 </script>
 
 <div class="twic-abstract">
@@ -13,10 +19,13 @@
     <div>
       <slot />
     </div>
-    {#if codeSandBoxUrl}
+    {#if href}
       <div class="codesandbox-container">
         <a {href} target="_blank" rel="noreferrer">
-          <img src="https://codesandbox.io/static/img/play-codesandbox.svg" {alt} />
+          <img
+            src="https://codesandbox.io/static/img/play-codesandbox.svg"
+            alt="Edit on CodeSandbox"
+          />
         </a>
       </div>
     {/if}

@@ -4,15 +4,9 @@
   import { TwicVideo } from '@twicpics/components/svelte3';
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicShortVideos.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicShortVideos.svelte">
   <div class="twic-short-videos-container">
-    <TwicAbstract
-      title="Short Videos"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicShortVideos.svelte"
-      codeSandBoxName="TwicPics x Svelte 3 - Short Videos"
-    >
+    <TwicAbstract title="Short Videos" codeSandBoxUrl="src/lib/TwicShortVideos.svelte">
       <p>
         The ideal candidates for TwicPics video integration are hero videos, product videos, and
         thumbnails.

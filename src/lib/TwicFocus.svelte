@@ -12,15 +12,9 @@
   };
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicFocus.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicFocus.svelte">
   <div class="twic-focus-container">
-    <TwicAbstract
-      title="focus property"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicFocus.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Focus property"
-    >
+    <TwicAbstract title="focus property" codeSandBoxUrl="src/lib/TwicFocus.svelte">
       <p>
         <strong>
           The <dfn title="focus property">focus</dfn> property will change the focus point coordinates

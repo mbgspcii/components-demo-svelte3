@@ -56,14 +56,8 @@
 </script>
 
 <!-- displays images with a horizontal scroll bar -->
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicSlider.svelte"
->
-  <TwicAbstract
-    title="A slider"
-    codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicSlider.svelte&hidenavigation=1"
-    codeSandBoxName="TwicPics x Svelte - Slider sample"
-  >
+<TwicWrapper gitHubUrl="src/lib/TwicSlider.svelte">
+  <TwicAbstract title="A slider" codeSandBoxUrl="src/lib/TwicSlider.svelte">
     <p>
       A simple slider that uses TwicPics for automatic lazy-loading, CLS optimization and art
       directions adaptation.

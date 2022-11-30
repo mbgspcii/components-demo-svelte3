@@ -6,15 +6,9 @@
   const imgUrl = `components/horse.jpg`;
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicStyleDriven.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicStyleDriven.svelte">
   <div class="twic-style-driven-container">
-    <TwicAbstract
-      title="CSS style driven"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicStyleDriven.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - CSS style driven"
-    >
+    <TwicAbstract title="CSS style driven" codeSandBoxUrl="src/lib/TwicStyleDriven.svelte">
       <p>You can set up the TwicPics components using pure CSS and the power of CSS variables.</p>
     </TwicAbstract>
     <h2>1. Display ratio with <span class="twic-code">--twic-ratio</span></h2>

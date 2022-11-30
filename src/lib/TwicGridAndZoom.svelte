@@ -200,14 +200,8 @@
   const images = [...seed, ...seed, ...seed];
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicGridAndZoom.svelte"
->
-  <TwicAbstract
-    title="Grid & zoom effect"
-    codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicGridAndZoom.svelte&hidenavigation=1"
-    codeSandBoxName="TwicPics x Svelte - Grid & zoom effect"
-  >
+<TwicWrapper gitHubUrl="src/lib/TwicGridAndZoom.svelte">
+  <TwicAbstract title="Grid & zoom effect" codeSandBoxUrl="src/lib/TwicGridAndZoom.svelte">
     <p>A responsive grid of images enhanced by zoom transition.</p>
     <p><strong>Scroll down to experience lazy loading in action</strong>.</p>
   </TwicAbstract>

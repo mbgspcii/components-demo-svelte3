@@ -21,15 +21,9 @@
 </script>
 
 <!-- demonstrates transition features -->
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicTransition.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicTransition.svelte">
   <div class="twic-transition-container">
-    <TwicAbstract
-      title="transition properties"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicTransition.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Transition property"
-    >
+    <TwicAbstract title="transition properties" codeSandBoxUrl="src/lib/TwicTransition.svelte">
       <p>
         <strong>
           The <dfn title="transition property">transition</dfn> properties allow you to customize the

@@ -4,7 +4,12 @@
   const logoSrc = `${LOGOS_PATH}svelte.png`;
   const logoAlt = `Svelte logo`;
   const redirect = `https://www.twicpics.com/docs/components/svelte-3`;
-  export let gitHubUrl = `https://github.com/TwicPics/components-demo-svelte3`;
+  export let gitHubUrl = undefined;
+  
+  const GITHUB_DEFAULT = `https://github.com/TwicPics/components-demo-svelte3`;
+  const GITHUB = `https://github.com/TwicPics/components-demo-svelte3/blob/main/`;
+  
+  $: _gitHubUrl = gitHubUrl ? `${GITHUB}/${gitHubUrl}` : GITHUB_DEFAULT;
 </script>
 
 <header id="twic-header">
@@ -20,10 +25,10 @@
     </h1>
   </a>
   <div class="ribbon">
-    <a target="_blank" href={gitHubUrl} rel="noreferrer">GitHub</a>
+    <a target="_blank" href={_gitHubUrl} rel="noreferrer">GitHub</a>
   </div>
   <div class="tags-container">
-    <div class="tag">@twicpics-components</div>
+    <div class="tag tag-components">@twicpics-components</div>
     <a
       href={redirect}
       target="_blank"
@@ -37,10 +42,13 @@
 
 <style lang="scss">
   $bg-color: #f9fafb;
+  $bg-github: #6d6d6d;
   $deep-purple: #8f00ff;
+  $ribbon-height: 30px;
   $green: #06ffa3;
+  $height: 100px;
   #twic-header {
-    height: 100px;
+    height: $height;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -51,25 +59,6 @@
     & a {
       text-decoration: none;
       color: initial;
-
-      &#go-to-github {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
-
-        & div {
-          border-top: 100px solid darken($bg-color, 5%);
-          border-left: 100px solid transparent;
-
-          & img {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            transform: rotate(45deg);
-          }
-        }
-      }
     }
     & .heading-primary {
       display: flex;
@@ -96,7 +85,6 @@
       justify-content: center;
       gap: 12px;
       width: 100%;
-      font-size: 0.9em;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -107,7 +95,6 @@
       display: flex;
       align-items: center;
       gap: 4px;
-      padding: 8px 16px;
       font-weight: 600;
       border-radius: 30px;
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -138,31 +125,39 @@
       }
     }
     .ribbon {
-      background-color: $deep-purple;
+      background-color: $bg-github;
       overflow: hidden;
       white-space: nowrap;
       position: absolute;
-      right: -38px;
-      top: 16px;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      -webkit-box-shadow: 0 0 10px #888;
-      -moz-box-shadow: 0 0 10px #888;
+      left: -33px;
+      top: 20px;
+      transform: rotate(-45deg);
       box-shadow: 0 0 10px #888;
     }
     .ribbon a {
-      border: 1px solid darken($deep-purple, 25);
+      border: 1px dashed #fff;
       color: #fff;
       display: block;
       font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      margin: 1px 0;
-      padding: 10px 50px;
       text-align: center;
       text-decoration: none;
       text-shadow: 0 0 5px #444;
+      width: 1.42 * $height;
+      line-height: $ribbon-height;
+      text-align: center;
+    }
+
+    .tags-container {
+      font-size: 0.7em;
+      @media (min-width: 640px) {
+        font-size: 0.9em;
+      }
+    }
+    .tag {
+      padding: 4px 8px;
+      @media (min-width: 640px) {
+        padding: 8px 16px;
+      }
     }
   }
 </style>

@@ -6,14 +6,11 @@
   const imgUrl = `components/greece.jpg`;
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicArtDirections.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicArtDirections.svelte">
   <div class="twic-art-direction-container">
     <TwicAbstract
       title="Art directions with CSS media queries"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicArtDirections.svelte"
-      codeSandBoxName="TwicPics x Svelte - Art directions"
+      codeSandBoxUrl="src/lib/TwicArtDirections.svelte"
     >
       <p>Setting up components using CSS enables hassle-free responsive designs.</p>
       <p>You do not need to create a set of images derived from the original.</p>

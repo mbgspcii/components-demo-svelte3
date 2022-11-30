@@ -18,15 +18,9 @@
 </script>
 
 <!-- demonstrates ratio features -->
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicRatio.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicRatio.svelte">
   <div class="twic-ratio-container">
-    <TwicAbstract
-      title="ratio property"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicRatio.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Ratio property"
-    >
+    <TwicAbstract title="ratio property" codeSandBoxUrl="src/lib/TwicRatio.svelte">
       <p>
         <strong>
           The <dfn title="ratio property">ratio</dfn> property determines the value of the width/height

@@ -33,15 +33,9 @@
   $: actualVertical = verticalConfig[indiceConfig];
 </script>
 
-<TwicWrapper
-  gitHubUrl="https://github.com/TwicPics/components-demo-svelte3/blob/main/src/lib/TwicAnchor.svelte"
->
+<TwicWrapper gitHubUrl="src/lib/TwicAnchor.svelte">
   <div class="twic-anchor-container">
-    <TwicAbstract
-      title="anchor property"
-      codeSandBoxUrl="https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=%2Fsrc%2Flib%2FTwicAnchor.svelte&hidenavigation=1"
-      codeSandBoxName="TwicPics x Svelte - Anchor property"
-    >
+    <TwicAbstract title="anchor property" codeSandBoxUrl="src/lib/TwicAnchor.svelte">
       <p>
         <strong>
           The <dfn title="anchor property">anchor</dfn> property positions the image in both
