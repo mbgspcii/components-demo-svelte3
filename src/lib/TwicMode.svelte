@@ -16,8 +16,8 @@
 </script>
 
 <!-- demonstrates mode features (contain or cover) -->
-<TwicWrapper gitHubUrl="src/lib/TwicMode.svelte">
-  <div class="twic-mode-container">
+<div id="twic-mode-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicMode.svelte">
     <TwicAbstract title="mode property" codeSandBoxUrl="src/lib/TwicMode.svelte">
       <p>
         <strong>
@@ -65,11 +65,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-mode-container {
+  #twic-mode-container {
     :global(.twic-item .twic-w) {
       background-color: #00ffa3;
       display: block;

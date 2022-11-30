@@ -56,18 +56,19 @@
 </script>
 
 <!-- displays images with a horizontal scroll bar -->
-<TwicWrapper gitHubUrl="src/lib/TwicSlider.svelte">
-  <TwicAbstract title="A slider" codeSandBoxUrl="src/lib/TwicSlider.svelte">
-    <p>
-      A simple slider that uses TwicPics for automatic lazy-loading, CLS optimization and art
-      directions adaptation.
-    </p>
-    <p>
-      <strong>Change the width of your browser</strong> to see the image aspect-ratio adapt according
-      to the CSS rules.
-    </p>
-  </TwicAbstract>
-  <div class="twic-slider-container">
+<div id="twic-slider-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicSlider.svelte">
+    <TwicAbstract title="A slider" codeSandBoxUrl="src/lib/TwicSlider.svelte">
+      <p>
+        A simple slider that uses TwicPics for automatic lazy-loading, CLS optimization and art
+        directions adaptation.
+      </p>
+      <p>
+        <strong>Change the width of your browser</strong> to see the image aspect-ratio adapt according
+        to the CSS rules.
+      </p>
+    </TwicAbstract>
+
     <ul class="slider">
       {#each images as img}
         <li class="slider-item">
@@ -77,11 +78,11 @@
         </li>
       {/each}
     </ul>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-slider-container {
+  #twic-slider-container {
     .slider {
       display: flex;
       list-style: none;
@@ -114,25 +115,24 @@
       background-color: rgba(black, 0.5);
       border-radius: 3px;
     }
-  }
-
-  .slider-item {
-    flex-basis: 100%;
-    --twic-ratio: calc(4 / 5);
-  }
-
-  .slider-item {
-    @media (min-width: 768px) {
-      flex-basis: 50%;
-      --twic-ratio: calc(1);
+    .slider-item {
+      flex-basis: 100%;
+      --twic-ratio: calc(4 / 5);
     }
 
-    @media (min-width: 1024px) {
-      --twic-ratio: calc(4 / 3);
-    }
+    .slider-item {
+      @media (min-width: 768px) {
+        flex-basis: 50%;
+        --twic-ratio: calc(1);
+      }
 
-    @media (min-width: 1280px) {
-      flex-basis: 30%;
+      @media (min-width: 1024px) {
+        --twic-ratio: calc(4 / 3);
+      }
+
+      @media (min-width: 1280px) {
+        flex-basis: 30%;
+      }
     }
   }
 </style>

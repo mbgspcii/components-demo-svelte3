@@ -40,8 +40,8 @@
 </script>
 
 <!-- demonstrates the default red placeholder when the property src is not set -->
-<TwicWrapper gitHubUrl="src/lib/TwicPageTemplating.svelte">
-  <div class="twic-working-without-images-container">
+<div id="twic-working-without-images-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicPageTemplating.svelte">
     <TwicAbstract
       title="Prepare your page template"
       codeSandBoxUrl="src/lib/TwicPageTemplating.svelte"
@@ -71,11 +71,11 @@
         </div>
       {/each}
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-working-without-images-container {
+  #twic-working-without-images-container {
     .twic-grid {
       &.ratio-3by4 {
         --twic-ratio: calc(3 / 4);

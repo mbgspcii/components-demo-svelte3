@@ -34,8 +34,8 @@
   $: actualVertical = verticalConfig[indiceConfig];
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicAnchor.svelte">
-  <div class="twic-anchor-container">
+<div id="twic-anchor-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicAnchor.svelte">
     <TwicAbstract title="anchor property" codeSandBoxUrl="src/lib/TwicAnchor.svelte">
       <p>
         <strong>
@@ -122,11 +122,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-anchor-container {
+  #twic-anchor-container {
     :global(.twic-item .twic-w) {
       background-color: #00ffa3;
       display: block;

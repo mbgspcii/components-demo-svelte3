@@ -22,8 +22,8 @@
 </script>
 
 <!-- demonstrates transition features -->
-<TwicWrapper gitHubUrl="src/lib/TwicTransition.svelte">
-  <div class="twic-transition-container">
+<div id="twic-transition-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicTransition.svelte">
     <TwicAbstract title="transition properties" codeSandBoxUrl="src/lib/TwicTransition.svelte">
       <p>
         <strong>
@@ -125,11 +125,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-transition-container {
+  #twic-transition-container {
     .show-transitions {
       :global(.twic-tf img) {
         opacity: 0 !important;

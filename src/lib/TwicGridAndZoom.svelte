@@ -200,12 +200,13 @@
   const images = [...seed, ...seed, ...seed];
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicGridAndZoom.svelte">
-  <TwicAbstract title="Grid & zoom effect" codeSandBoxUrl="src/lib/TwicGridAndZoom.svelte">
-    <p>A responsive grid of images enhanced by zoom transition.</p>
-    <p><strong>Scroll down to experience lazy loading in action</strong>.</p>
-  </TwicAbstract>
-  <div class="twic-grid-and-zoom">
+<div id="twic-grid-and-zoom">
+  <TwicWrapper gitHubUrl="src/lib/TwicGridAndZoom.svelte">
+    <TwicAbstract title="Grid & zoom effect" codeSandBoxUrl="src/lib/TwicGridAndZoom.svelte">
+      <p>A responsive grid of images enhanced by zoom transition.</p>
+      <p><strong>Scroll down to experience lazy loading in action</strong>.</p>
+    </TwicAbstract>
+
     <ul>
       {#each images as image}
         <li class="twic-item">
@@ -220,11 +221,11 @@
         </li>
       {/each}
     </ul>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-grid-and-zoom {
+  #twic-grid-and-zoom {
     ul {
       display: grid;
       gap: 1rem;
@@ -242,7 +243,7 @@
     }
   }
 
-  .twic-grid-and-zoom ul {
+  #twic-grid-and-zoom ul {
     @media screen and (min-width: 425px) {
       grid-template-columns: repeat(2, 1fr);
     }

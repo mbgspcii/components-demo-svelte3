@@ -5,38 +5,43 @@
   import { TwicImg } from '@twicpics/components/svelte3';
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicIntrinsic.svelte">
-  <div class="twic-intrinsic-container">
-    <TwicAbstract title="Intrinsic Property" codeSandBoxUrl="src/lib/TwicIntrinsic.svelte">
-      <p>
-        <strong>
-          The <dfn>intrinsic</dfn> property allows to specify the intrinsic dimensions of the image
-          in pixel as in <Code>intrinsic="3840x2160"</Code>
-        </strong>
-      </p>
-      <p>It prevents image or video upscaling and limits the number of generated variants</p>
-      <p>
-        Especially handy for <strong>hero images and hero videos</strong>: these full width and/or
-        full height elements tend to generate a lot of variants if left unchecked which can
-        seriously hinder cross-device caching..
-      </p>
-    </TwicAbstract>
-    <div class="hero">
-      <TwicImg src="components/fantasy.jpg" ratio="none" intrinsic="6526x3000" />
+<div id="twic-intrinsic-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicIntrinsic.svelte">
+    <div class="demo-container">
+      <TwicAbstract title="Intrinsic Property" codeSandBoxUrl="src/lib/TwicIntrinsic.svelte">
+        <p>
+          <strong>
+            The <dfn>intrinsic</dfn> property allows to specify the intrinsic dimensions of the
+            image in pixel as in <Code>intrinsic="3840x2160"</Code>
+          </strong>
+        </p>
+        <p>It prevents image or video upscaling and limits the number of generated variants</p>
+        <p>
+          Especially handy for <strong>hero images and hero videos</strong>: these full width and/or
+          full height elements tend to generate a lot of variants if left unchecked which can
+          seriously hinder cross-device caching..
+        </p>
+      </TwicAbstract>
+      <div class="hero">
+        <TwicImg src="components/fantasy.jpg" ratio="none" intrinsic="6526x3000" />
+      </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  :global(#twic-demo-container) {
-    @media screen and (min-width: 768px) {
-      margin: 80px 60px;
+  #twic-intrinsic-container {
+    & :global(#twic-demo-container) {
+      @media screen and (min-width: 1600px) {
+        max-width: 95% !important;
+      }
     }
-    @media screen and (min-width: 1600px) {
-      max-width: 95% !important;
+
+    & :global(.twic-abstract) {
+      margin-bottom: unset !important;
     }
   }
-  .twic-intrinsic-container {
+  .demo-container {
     background-color: rgba(#ffffff, $alpha: 0.8);
     padding: 30px;
     margin-top: 20%;
@@ -48,9 +53,8 @@
       top: 0;
       left: 0;
       width: 100vw;
-      height: 100vh;
       & :global(.twic-i) {
-        height: 100%;
+        height: 100vh;
       }
     }
   }

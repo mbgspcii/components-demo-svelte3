@@ -2,6 +2,7 @@
   import TwicAbstract from './components/demo-wrapper/TwicAbstract.svelte';
   import TwicWrapper from './components/demo-wrapper/TwicWrapper.svelte';
   import { TwicImg } from '@twicpics/components/svelte3';
+  import Code from './components/Code.svelte';
 
   const imgUrl = `components/cat.jpg`;
   let showPlaceholders = false;
@@ -21,8 +22,8 @@
 </script>
 
 <!-- demonstrates placeholders features -->
-<TwicWrapper gitHubUrl="src/lib/TwicPlaceholder.svelte">
-  <div class="twic-placeholder-container">
+<div id="twic-placeholder-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicPlaceholder.svelte">
     <TwicAbstract title="placeholder property" codeSandBoxUrl="src/lib/TwicPlaceholder.svelte">
       <p>
         <strong>
@@ -82,11 +83,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-placeholder-container {
+  #twic-placeholder-container {
     .show-placeholders {
       :global(img) {
         visibility: hidden !important;

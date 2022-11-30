@@ -5,8 +5,8 @@
   import { TwicImg } from '@twicpics/components/svelte3';
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicBasicGrid.svelte">
-  <div class="twic-basic-grid-container">
+<div id="twic-basic-grid-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicBasicGrid.svelte">
     <TwicAbstract title="A basic example" codeSandBoxUrl="src/lib/TwicBasicGrid.svelte">
       <p>
         TwicPics is a Responsive Image Service Solution (SaaS) that enables on-demand responsive
@@ -62,11 +62,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-basic-grid-container {
+  #twic-basic-grid-container {
     :global(.twic-item .twic-w) {
       background-color: #00ffa3;
       display: block;

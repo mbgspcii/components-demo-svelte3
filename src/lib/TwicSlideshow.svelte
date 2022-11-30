@@ -29,8 +29,8 @@
 </script>
 
 <!-- displays a carousel of responsive images -->
-<TwicWrapper gitHubUrl="src/lib/TwicSlideshow.svelte">
-  <div class="twic-slideshow-container">
+<div id="twic-slideshow-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicSlideshow.svelte">
     <TwicAbstract title="A Picture Carousel" codeSandBoxUrl="src/lib/TwicSlideshow.svelte">
       <p>
         Use TwicPics for automatic lazy-loading, CLS optimization and art directions adaptation.
@@ -43,13 +43,17 @@
         to the CSS rules.
       </p>
     </TwicAbstract>
-    <Slideshow {images} />
-  </div>
-</TwicWrapper>
+    <div class="slideshow-container">
+      <Slideshow {images} />
+    </div>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-slideshow-container {
-    margin: auto;
-    width: 75%;
+  #twic-slideshow-container {
+    .slideshow-container {
+      margin: auto;
+      width: 80%;
+    }
   }
 </style>

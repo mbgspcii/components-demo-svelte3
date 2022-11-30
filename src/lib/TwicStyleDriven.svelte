@@ -7,8 +7,8 @@
   const imgUrl = `components/horse.jpg`;
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicStyleDriven.svelte">
-  <div class="twic-style-driven-container">
+<div id="twic-style-driven-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicStyleDriven.svelte">
     <TwicAbstract title="CSS style driven" codeSandBoxUrl="src/lib/TwicStyleDriven.svelte">
       <p>You can set up the TwicPics components using pure CSS and the power of CSS variables.</p>
     </TwicAbstract>
@@ -96,11 +96,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-style-driven-container {
+  #twic-style-driven-container {
     h2 {
       margin-bottom: 30px;
     }

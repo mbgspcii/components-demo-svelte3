@@ -13,8 +13,8 @@
   };
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicFocus.svelte">
-  <div class="twic-focus-container">
+<div id="twic-focus-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicFocus.svelte">
     <TwicAbstract title="focus property" codeSandBoxUrl="src/lib/TwicFocus.svelte">
       <p>
         <strong>
@@ -89,7 +89,5 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
-
-<style lang="scss"></style>
+  </TwicWrapper>
+</div>

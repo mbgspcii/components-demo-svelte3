@@ -8,8 +8,8 @@
 </script>
 
 <!-- demonstrates the preTransform property -->
-<TwicWrapper gitHubUrl="src/lib/TwicPreTransform.svelte">
-  <div class="twic-pretransform-container">
+<div id="twic-pretransform-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicPreTransform.svelte">
     <TwicAbstract title="preTransform property" codeSandBoxUrl="src/lib/TwicPreTransform.svelte">
       <p>
         <Code>preTransform</Code> is a slash-separated list of TwicPics API transformations that perform
@@ -62,8 +62,5 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
-
-<style lang="scss">
-</style>
+  </TwicWrapper>
+</div>

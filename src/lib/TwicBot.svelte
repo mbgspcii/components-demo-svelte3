@@ -27,8 +27,8 @@
   $: actualConfig = config[indiceConfig];
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicBot.svelte">
-  <div class="twic-bot-container">
+<div id="twic-bot-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicBot.svelte">
     <TwicAbstract title="Bot Property" codeSandBoxUrl="src/lib/TwicBot.svelte">
       <p>
         <strong>
@@ -103,16 +103,11 @@
         <span> Bot will override anchor="{actualConfig.anchor}"</span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-bot-container {
-    :global(.twic-item .twic-w) {
-      background-color: #00ffa3;
-      display: block;
-    }
-
+  #twic-bot-container {
     img {
       width: 100%;
       height: 100%;

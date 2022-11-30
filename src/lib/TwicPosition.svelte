@@ -17,8 +17,8 @@
   };
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicPosition.svelte">
-  <div class="twic-position-container">
+<div id="twic-position-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicPosition.svelte">
     <TwicAbstract title="position property" codeSandBoxUrl="src/lib/TwicPosition.svelte">
       <p>
         In <Code>contain</Code> mode,
@@ -84,11 +84,11 @@
         <span>No position set (<Code>center</Code> by default)</span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-position-container {
+  #twic-position-container {
     :global(.twic-item .twic-w) {
       background-color: #00ffa3;
       display: block;

@@ -6,8 +6,8 @@
   const imgUrl = `components/greece.jpg`;
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicArtDirections.svelte">
-  <div class="twic-art-direction-container">
+<div id="twic-art-direction-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicArtDirections.svelte">
     <TwicAbstract
       title="Art directions with CSS media queries"
       codeSandBoxUrl="src/lib/TwicArtDirections.svelte"
@@ -26,11 +26,11 @@
     <div class="twic-item style-driven-responsive">
       <TwicImg src={imgUrl} focus="48px100p" />
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-art-direction-container {
+  #twic-art-direction-container {
     .style-driven-responsive {
       --twic-ratio: calc(2 / 3);
       --twic-mode: cover;
@@ -38,7 +38,7 @@
     }
   }
 
-  .twic-art-direction-container .style-driven-responsive {
+  #twic-art-direction-container .style-driven-responsive {
     max-width: 1024px;
 
     @media (min-width: 640px) {

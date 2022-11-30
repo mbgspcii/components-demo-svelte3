@@ -32,8 +32,8 @@
   };
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicModal.svelte">
-  <div class="twic-modal-container">
+<div id="twic-modal-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicModal.svelte">
     <TwicAbstract title="A modal revealer" codeSandBoxUrl="src/lib/TwicModal.svelte">
       <p>Click on the image of your choice to reveal a modal.</p>
     </TwicAbstract>
@@ -50,11 +50,11 @@
         </div>
       {/each}
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-modal-container {
+  #twic-modal-container {
     figure.poster-wrapper {
       position: relative;
       figcaption {

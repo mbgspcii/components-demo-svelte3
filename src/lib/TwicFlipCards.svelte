@@ -39,10 +39,11 @@
   ];
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicFlipCards.svelte">
-  <div class="twic-flip-card-container">
+<div id="twic-flip-card-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicFlipCards.svelte">
     <TwicAbstract title="Flip cards" codeSandBoxUrl="src/lib/TwicFlipCards.svelte">
-      <p>Move your mouse over the images below.</p>\notifications.html
+      <p>Move your mouse over the images below.</p>
+      \notifications.html
     </TwicAbstract>
     <div class="twic-grid">
       {#each cards as card}
@@ -62,11 +63,11 @@
         </div>
       {/each}
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-flip-card-container {
+  #twic-flip-card-container {
     .flip-card {
       position: relative;
       background-color: transparent;

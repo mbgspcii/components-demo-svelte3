@@ -19,8 +19,8 @@
 </script>
 
 <!-- demonstrates ratio features -->
-<TwicWrapper gitHubUrl="src/lib/TwicRatio.svelte">
-  <div class="twic-ratio-container">
+<div id="twic-ratio-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicRatio.svelte">
     <TwicAbstract title="ratio property" codeSandBoxUrl="src/lib/TwicRatio.svelte">
       <p>
         <strong>
@@ -86,11 +86,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-ratio-container {
+  #twic-ratio-container {
     .twic-grid {
       --twic-grid-columns-width: 40%;
       &.full-width {

@@ -5,8 +5,8 @@
   import { TwicVideo } from '@twicpics/components/svelte3';
 </script>
 
-<TwicWrapper gitHubUrl="src/lib/TwicShortVideos.svelte">
-  <div class="twic-short-videos-container">
+<div id="twic-short-videos-container">
+  <TwicWrapper gitHubUrl="src/lib/TwicShortVideos.svelte">
     <TwicAbstract title="Short Videos" codeSandBoxUrl="src/lib/TwicShortVideos.svelte">
       <p>
         The ideal candidates for TwicPics video integration are hero videos, product videos, and
@@ -88,11 +88,11 @@
         </span>
       </div>
     </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
+</div>
 
 <style lang="scss">
-  .twic-short-videos-container {
+  #twic-short-videos-container {
     :global(.twic-item .twic-w) {
       background-color: #00ffa3;
       display: block;
