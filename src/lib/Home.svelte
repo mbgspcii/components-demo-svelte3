@@ -68,6 +68,11 @@
           title: `anchor`
         },
         {
+          route: `/bot`,
+          imgSrc: `components/puppy.jpg`,
+          title: `bot`
+        },
+        {
           route: `/focus`,
           imgSrc: `components/puppy.jpg`,
           title: `focus`

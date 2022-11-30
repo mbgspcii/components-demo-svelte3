@@ -22,8 +22,7 @@
       <p>
         In <span class="twic-code">contain</span> mode,
         <strong>
-          the <dfn title="position property">position</dfn> property changes the location of the image
-          inside the area of the component.
+          the <dfn>position</dfn> property changes the location of the image inside the area of the component.
         </strong>
       </p>
       <p>

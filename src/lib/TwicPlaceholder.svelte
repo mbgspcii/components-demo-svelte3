@@ -26,8 +26,8 @@
     <TwicAbstract title="placeholder property" codeSandBoxUrl="src/lib/TwicPlaceholder.svelte">
       <p>
         <strong>
-          The <dfn title="placeholder property">placeholder</dfn> property helps you optimize user experience,
-          CLS, and implement the LQIP technique.
+          The <dfn>placeholder</dfn> property helps you optimize user experience, CLS, and implement
+          the LQIP technique.
         </strong>
       </p>
       <p>

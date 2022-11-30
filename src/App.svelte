@@ -4,6 +4,7 @@
   import Anchor from './lib/TwicAnchor.svelte';
   import ArtDirections from './lib/TwicArtDirections.svelte';
   import BasicGrid from './lib/TwicBasicGrid.svelte';
+  import Bot from './lib/TwicBot.svelte';
   import FlipCards from './lib/TwicFlipCards.svelte';
   import Focus from './lib/TwicFocus.svelte';
   import GridAndZoom from './lib/TwicGridAndZoom.svelte';
@@ -26,6 +27,7 @@
   router('/anchor', () => (page = Anchor));
   router('/art-directions', () => (page = ArtDirections));
   router('/basic-grid', () => (page = BasicGrid));
+  router('/bot', () => (page = Bot));
   router('/flip-cards', () => (page = FlipCards));
   router('/focus', () => (page = Focus));
   router('/grid-and-zoom', () => (page = GridAndZoom));

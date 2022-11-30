@@ -17,8 +17,7 @@
     <TwicAbstract title="focus property" codeSandBoxUrl="src/lib/TwicFocus.svelte">
       <p>
         <strong>
-          The <dfn title="focus property">focus</dfn> property will change the focus point coordinates
-          of the image
+          The <dfn>focus</dfn> property will change the focus point coordinates of the image
         </strong>
         (only useful with
         <span class="twic-code">mode="cover"</span>).

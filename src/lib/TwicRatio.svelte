@@ -23,8 +23,8 @@
     <TwicAbstract title="ratio property" codeSandBoxUrl="src/lib/TwicRatio.svelte">
       <p>
         <strong>
-          The <dfn title="ratio property">ratio</dfn> property determines the value of the width/height
-          ratio of the image display area.
+          The <dfn>ratio</dfn> property determines the value of the width/height ratio of the image display
+          area.
         </strong>
       </p>
       <p>Its value can be:</p>

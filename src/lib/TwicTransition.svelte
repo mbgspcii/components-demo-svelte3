@@ -26,8 +26,8 @@
     <TwicAbstract title="transition properties" codeSandBoxUrl="src/lib/TwicTransition.svelte">
       <p>
         <strong>
-          The <dfn title="transition property">transition</dfn> properties allow you to customize the
-          effect used to reveal the image once it has been loaded
+          The <dfn>transition</dfn> properties allow you to customize the effect used to reveal the image
+          once it has been loaded
         </strong>.
       </p>
       <ul>

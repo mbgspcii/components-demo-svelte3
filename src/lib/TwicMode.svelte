@@ -21,7 +21,7 @@
       <p>
         <strong>
           The
-          <dfn title="mode property">mode</dfn>
+          <dfn>mode</dfn>
           property determines if the image fills or sits inside the area.
         </strong>
       </p>

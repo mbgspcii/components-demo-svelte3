@@ -38,7 +38,7 @@
     <TwicAbstract title="anchor property" codeSandBoxUrl="src/lib/TwicAnchor.svelte">
       <p>
         <strong>
-          The <dfn title="anchor property">anchor</dfn> property positions the image in both
+          The <dfn>anchor</dfn> property positions the image in both
           <span class="twic-code">contain</span>
           and <span class="twic-code">cover</span> mode.
         </strong>
