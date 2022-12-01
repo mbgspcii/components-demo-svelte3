@@ -29,7 +29,7 @@
       <ul>
         <li>
           <Code>intrinsic</Code>:
-          <span>prevents image upscaling and limits the number of generated variants..</span>
+          <span>prevents video upscaling and limits the number of generated variants.</span>
         </li>
         <li>
           <Code>focus</Code>:

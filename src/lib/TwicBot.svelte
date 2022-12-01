@@ -37,8 +37,8 @@
         </strong>
       </p>
       <p>
-        Its goal is to optimize SEO by always giving the same image to the engine bots even if it
-        emulates different devices.
+        Its goal is to optimize SEO by always giving the same image to the search engine bots even
+        if they emulate different devices.
       </p>
       <p>
         The syntax is a slash-separated list of <a
@@ -58,8 +58,8 @@
       </p>
       <p>
         <strong>Sets your browser's user agent to a bot engine value</strong>
-        to see how the bots will perceive the images. Note that context changes then have no effect on
-        the delivered image.
+        to see how bots will perceive the images. Note that context changes then have no effect on the
+        delivered image.
       </p>
     </TwicAbstract>
     <div class="twic-testing-container">
