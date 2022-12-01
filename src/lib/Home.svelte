@@ -17,6 +17,11 @@
           title: `Basic example`
         },
         {
+          route: `/color-blindness`,
+          imgSrc: `components/colored-balloons.jpg`,
+          title: `Color Blindness`
+        },
+        {
           route: `/flip-cards`,
           imgSrc: `components/flip/orange-1.jpg`,
           title: `Flip cards`

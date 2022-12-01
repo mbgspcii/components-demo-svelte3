@@ -42,7 +42,7 @@
       </p>
       <p>
         The syntax is a slash-separated list of <a
-          href="https://www.twicpics.com/docs/api/transformations"
+          href="https://www.twicpics.com/docs/api/transformations?utm_source=github&utm_medium=organic&utm_campaign=components"
           target="_blank"
           rel="noreferrer"
         >

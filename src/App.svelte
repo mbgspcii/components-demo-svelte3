@@ -5,6 +5,7 @@
   import ArtDirections from './lib/TwicArtDirections.svelte';
   import BasicGrid from './lib/TwicBasicGrid.svelte';
   import Bot from './lib/TwicBot.svelte';
+  import ColorBlindness from './lib/TwicColorBlindness.svelte';
   import FlipCards from './lib/TwicFlipCards.svelte';
   import Focus from './lib/TwicFocus.svelte';
   import GridAndZoom from './lib/TwicGridAndZoom.svelte';
@@ -30,6 +31,7 @@
   router('/art-directions', () => (page = ArtDirections));
   router('/basic-grid', () => (page = BasicGrid));
   router('/bot', () => (page = Bot));
+  router('/color-blindness', () => (page = ColorBlindness));
   router('/flip-cards', () => (page = FlipCards));
   router('/focus', () => (page = Focus));
   router('/grid-and-zoom', () => (page = GridAndZoom));
