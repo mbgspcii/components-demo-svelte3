@@ -17,6 +17,11 @@
           title: `Basic example`
         },
         {
+          route: `/bulk-loading`,
+          imgSrc: `https://assets.twicpics.com/examples/football.jpg`,
+          title: `Bulk Loading`
+        },
+        {
           route: `/color-blindness`,
           imgSrc: `components/colored-balloons.jpg`,
           title: `Color Blindness`
