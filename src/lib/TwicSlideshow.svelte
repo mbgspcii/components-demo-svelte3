@@ -36,7 +36,8 @@
         Use TwicPics for automatic lazy-loading, CLS optimization and art directions adaptation.
       </p>
       <p>
-        Monitor the loading status of your media with <Code>state</Code> property value.
+        Monitor the <a href="/state" target="_blank" rel="noreferrer">loading status </a> of your
+        media with <Code>state</Code> property value.
       </p>
       <p>
         <strong>Change the width of your browser</strong> to see the image aspect-ratio adapt according

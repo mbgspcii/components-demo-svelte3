@@ -22,6 +22,7 @@
   import Slideshow from './lib/TwicSlideshow.svelte';
   import StyleDriven from './lib/TwicStyleDriven.svelte';
   import PageTemplating from './lib/TwicPageTemplating.svelte';
+  import State from './lib/TwicState.svelte';
   import Transition from './lib/TwicTransition.svelte';
   import ShortVideos from './lib/TwicShortVideos.svelte';
 
@@ -47,6 +48,7 @@
   router('/ratio', () => (page = Ratio));
   router('/slider', () => (page = Slider));
   router('/slideshow', () => (page = Slideshow));
+  router('/state', () => (page = State));
   router('/style-driven', () => (page = StyleDriven));
   router('/transition', () => (page = Transition));
   router('/page-templating', () => (page = PageTemplating));

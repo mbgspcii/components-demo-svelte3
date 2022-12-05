@@ -123,6 +123,11 @@
           title: `ratio`
         },
         {
+          route: `/state`,
+          imgSrc: `components/states/autumn.jpg`,
+          title: `state`
+        },
+        {
           route: `/transition`,
           imgSrc: `components/peacock.jpg`,
           title: `transition`
