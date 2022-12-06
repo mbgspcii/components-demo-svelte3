@@ -83,6 +83,10 @@
         > children as soon as <Code>TwicView</Code> comes into the viewport (depending on your anticipation
         settings).
       </p>
+      <p>
+        See also the <a href="/eager" target="_blank" rel="noreferrer">eager property</a> that disables
+        lazy loading for a given media.
+      </p>
     </TwicAbstract>
     <TwicView>
       <div class="polaroids" on:click={changeImage}>

@@ -43,7 +43,6 @@
   <TwicWrapper gitHubUrl="src/lib/TwicFlipCards.svelte">
     <TwicAbstract title="Flip cards" codeSandBoxUrl="src/lib/TwicFlipCards.svelte">
       <p>Move your mouse over the images below.</p>
-      \notifications.html
     </TwicAbstract>
     <div class="twic-grid">
       {#each cards as card}
