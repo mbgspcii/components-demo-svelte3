@@ -8,7 +8,7 @@
 <div id="twic-intrinsic-container">
   <TwicWrapper gitHubUrl="src/lib/TwicIntrinsic.svelte">
     <div class="demo-container">
-      <TwicAbstract title="Intrinsic Property" codeSandBoxUrl="src/lib/TwicIntrinsic.svelte">
+      <TwicAbstract title="intrinsic property" codeSandBoxUrl="src/lib/TwicIntrinsic.svelte">
         <p>
           <strong>
             The <dfn>intrinsic</dfn> property allows to specify the intrinsic dimensions of the

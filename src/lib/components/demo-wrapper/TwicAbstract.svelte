@@ -6,10 +6,10 @@
   let href = undefined;
 
   const CODESANDBOX = `https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=`;
-  
+
   $: if (codeSandBoxUrl) {
     _codeSandBoxUrl = `/${codeSandBoxUrl}`;
-    href = `${CODESANDBOX}${encodeURIComponent(codeSandBoxUrl)}?hidenavigation=1`;
+    href = `${CODESANDBOX}${encodeURIComponent(codeSandBoxUrl)}`;
   }
 </script>
 

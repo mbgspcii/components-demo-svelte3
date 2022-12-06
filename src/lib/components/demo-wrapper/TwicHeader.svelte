@@ -5,10 +5,10 @@
   const logoAlt = `Svelte logo`;
   const redirect = `https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components`;
   export let gitHubUrl = undefined;
-  
+
   const GITHUB_DEFAULT = `https://github.com/TwicPics/components-demo-svelte3`;
   const GITHUB = `https://github.com/TwicPics/components-demo-svelte3/blob/main/`;
-  
+
   $: _gitHubUrl = gitHubUrl ? `${GITHUB}/${gitHubUrl}` : GITHUB_DEFAULT;
 </script>
 

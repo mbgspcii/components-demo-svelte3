@@ -25,8 +25,7 @@
 
 <style lang="scss">
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute;
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
@@ -35,8 +34,9 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    transform: translate(10000px);
     &.modal-opened {
-      display: block;
+      transform: translate(0);
     }
 
     .modal-content {

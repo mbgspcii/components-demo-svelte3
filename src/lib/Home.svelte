@@ -88,6 +88,11 @@
           title: `bot`
         },
         {
+          route: `/eager`,
+          imgSrc: `components/eager/light-red-flares.jpg`,
+          title: `eager`
+        },
+        {
           route: `/focus`,
           imgSrc: `components/puppy.jpg`,
           title: `focus`
