@@ -1,15 +1,12 @@
 <script>
   export let title;
   export let codeSandBoxUrl = undefined;
-
-  let _codeSandBoxUrl = undefined;
+  
   let href = undefined;
-
   const CODESANDBOX = `https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=`;
 
   $: if (codeSandBoxUrl) {
-    _codeSandBoxUrl = `/${codeSandBoxUrl}`;
-    href = `${CODESANDBOX}${encodeURIComponent(codeSandBoxUrl)}`;
+    href = `${CODESANDBOX}${codeSandBoxUrl}`;
   }
 </script>
 
