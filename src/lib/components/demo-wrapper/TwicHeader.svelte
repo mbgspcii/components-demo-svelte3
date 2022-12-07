@@ -7,7 +7,7 @@
   export let gitHubUrl = undefined;
 
   const GITHUB_DEFAULT = `https://github.com/TwicPics/components-demo-svelte3`;
-  const GITHUB = `https://github.com/TwicPics/components-demo-svelte3/blob/main/`;
+  const GITHUB = `https://github.com/TwicPics/components-demo-svelte3/blob/main`;
 
   $: _gitHubUrl = gitHubUrl ? `${GITHUB}/${gitHubUrl}` : GITHUB_DEFAULT;
 </script>
