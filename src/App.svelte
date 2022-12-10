@@ -29,6 +29,8 @@
 
   let page;
 
+  // test 4
+
   router('/', () => (page = Home));
   router('/anchor', () => (page = Anchor));
   router('/art-directions', () => (page = ArtDirections));
