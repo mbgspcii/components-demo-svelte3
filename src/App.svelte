@@ -29,7 +29,7 @@
 
   let page;
 
-  // test 6
+  // test 6.1
 
   router('/', () => (page = Home));
   router('/anchor', () => (page = Anchor));
