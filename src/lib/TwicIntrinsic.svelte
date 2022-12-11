@@ -17,7 +17,11 @@
         </p>
         <p>It prevents image or video upscaling and limits the number of generated variants</p>
         <p>
-          Especially recommended for <a href="/hero" target="_blank" rel="noreferrer"
+          Especially recommended when your image or video master has potentially smaller dimensions
+          than those that may be displayed.
+        </p>
+        <p>
+          This is often the case when using <a href="/hero" target="_blank" rel="noreferrer"
             >hero images and videos</a
           >.
         </p>
