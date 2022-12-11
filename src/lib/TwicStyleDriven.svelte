@@ -9,7 +9,7 @@
 
 <div id="twic-style-driven-container">
   <TwicWrapper gitHubUrl="src/lib/TwicStyleDriven.svelte">
-    <TwicAbstract title="CSS style driven" codeSandBoxUrl="src/lib/TwicStyleDriven.svelte">
+    <TwicAbstract title="CSS style driven">
       <p>You can set up the TwicPics components using pure CSS and the power of CSS variables.</p>
     </TwicAbstract>
     <h2>1. Display ratio with <Code>--twic-ratio</Code></h2>

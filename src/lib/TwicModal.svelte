@@ -34,7 +34,7 @@
 
 <div id="twic-modal-container">
   <TwicWrapper gitHubUrl="src/lib/TwicModal.svelte">
-    <TwicAbstract title="A modal revealer" codeSandBoxUrl="src/lib/TwicModal.svelte">
+    <TwicAbstract title="A modal revealer">
       <p>Click on the image of your choice to reveal a modal.</p>
     </TwicAbstract>
     <div class="twic-grid">

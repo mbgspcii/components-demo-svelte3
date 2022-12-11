@@ -31,7 +31,7 @@
 <!-- displays a carousel of responsive images -->
 <div id="twic-slideshow-container">
   <TwicWrapper gitHubUrl="src/lib/TwicSlideshow.svelte">
-    <TwicAbstract title="A Picture Carousel" codeSandBoxUrl="src/lib/TwicSlideshow.svelte">
+    <TwicAbstract title="A Picture Carousel">
       <p>
         Use TwicPics for automatic lazy-loading, CLS optimization and art directions adaptation.
       </p>

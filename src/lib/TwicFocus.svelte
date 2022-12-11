@@ -15,7 +15,7 @@
 
 <div id="twic-focus-container">
   <TwicWrapper gitHubUrl="src/lib/TwicFocus.svelte">
-    <TwicAbstract title="focus property" codeSandBoxUrl="src/lib/TwicFocus.svelte">
+    <TwicAbstract title="focus property">
       <p>
         <strong>
           The <dfn>focus</dfn> property will change the focus point coordinates of the image

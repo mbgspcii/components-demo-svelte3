@@ -24,7 +24,7 @@
 <!-- demonstrates placeholders features -->
 <div id="twic-placeholder-container">
   <TwicWrapper gitHubUrl="src/lib/TwicPlaceholder.svelte">
-    <TwicAbstract title="placeholder property" codeSandBoxUrl="src/lib/TwicPlaceholder.svelte">
+    <TwicAbstract title="placeholder property">
       <p>
         <strong>
           The <dfn>placeholder</dfn> property helps you optimize user experience, CLS, and implement

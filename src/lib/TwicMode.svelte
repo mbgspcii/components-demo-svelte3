@@ -18,7 +18,7 @@
 <!-- demonstrates mode features (contain or cover) -->
 <div id="twic-mode-container">
   <TwicWrapper gitHubUrl="src/lib/TwicMode.svelte">
-    <TwicAbstract title="mode property" codeSandBoxUrl="src/lib/TwicMode.svelte">
+    <TwicAbstract title="mode property">
       <p>
         <strong>
           The

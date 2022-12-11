@@ -42,10 +42,7 @@
 <!-- demonstrates the default red placeholder when the property src is not set -->
 <div id="twic-working-without-images-container">
   <TwicWrapper gitHubUrl="src/lib/TwicPageTemplating.svelte">
-    <TwicAbstract
-      title="Prepare your page template"
-      codeSandBoxUrl="src/lib/TwicPageTemplating.svelte"
-    >
+    <TwicAbstract title="Prepare your page template">
       <p>
         When you develop the page template and can't or don't want to integrate your images at this
         first stage, it is possible

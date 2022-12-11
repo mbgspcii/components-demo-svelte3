@@ -19,7 +19,7 @@
 
 <div id="twic-position-container">
   <TwicWrapper gitHubUrl="src/lib/TwicPosition.svelte">
-    <TwicAbstract title="position property" codeSandBoxUrl="src/lib/TwicPosition.svelte">
+    <TwicAbstract title="position property">
       <p>
         In <Code>contain</Code> mode,
         <strong>

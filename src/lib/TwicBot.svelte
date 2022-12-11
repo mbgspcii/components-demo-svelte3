@@ -29,7 +29,7 @@
 
 <div id="twic-bot-container">
   <TwicWrapper gitHubUrl="src/lib/TwicBot.svelte">
-    <TwicAbstract title="bot property" codeSandBoxUrl="src/lib/TwicBot.svelte">
+    <TwicAbstract title="bot property">
       <p>
         <strong>
           The <dfn>bot</dfn> specifies a manipulation to be applied to the medium when search engine

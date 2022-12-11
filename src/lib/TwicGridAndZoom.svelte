@@ -202,7 +202,7 @@
 
 <div id="twic-grid-and-zoom">
   <TwicWrapper gitHubUrl="src/lib/TwicGridAndZoom.svelte">
-    <TwicAbstract title="Grid & zoom effect" codeSandBoxUrl="src/lib/TwicGridAndZoom.svelte">
+    <TwicAbstract title="Grid & zoom effect">
       <p>A responsive grid of images enhanced by zoom transition.</p>
       <p><strong>Scroll down to experience lazy loading in action</strong>.</p>
     </TwicAbstract>

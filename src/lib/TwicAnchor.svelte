@@ -36,7 +36,7 @@
 
 <div id="twic-anchor-container">
   <TwicWrapper gitHubUrl="src/lib/TwicAnchor.svelte">
-    <TwicAbstract title="anchor property" codeSandBoxUrl="src/lib/TwicAnchor.svelte">
+    <TwicAbstract title="anchor property">
       <p>
         <strong>
           The <dfn>anchor</dfn> property positions the image in both

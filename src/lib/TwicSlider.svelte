@@ -58,7 +58,7 @@
 <!-- displays images with a horizontal scroll bar -->
 <div id="twic-slider-container">
   <TwicWrapper gitHubUrl="src/lib/TwicSlider.svelte">
-    <TwicAbstract title="A slider" codeSandBoxUrl="src/lib/TwicSlider.svelte">
+    <TwicAbstract title="A slider">
       <p>
         A simple slider that uses TwicPics for automatic lazy-loading, CLS optimization and art
         directions adaptation.

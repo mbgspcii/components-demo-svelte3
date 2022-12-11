@@ -58,7 +58,7 @@
 <div id="twic-eager-container">
   <TwicWrapper gitHubUrl="src/lib/TwicEager.svelte">
     <div class="demo-container">
-      <TwicAbstract title="eager property" codeSandBoxUrl="src/lib/TwicEager.svelte">
+      <TwicAbstract title="eager property">
         <p>
           <strong>
             The <dfn>eager</dfn> property allows to disable lazy loading for a given media

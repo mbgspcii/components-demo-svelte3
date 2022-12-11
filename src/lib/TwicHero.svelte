@@ -8,7 +8,7 @@
 <div id="twic-hero-container">
   <TwicWrapper gitHubUrl="src/lib/TwicHero.svelte">
     <div class="twic-demo-container">
-      <TwicAbstract title="Hero image" codeSandBoxUrl="src/lib/TwicHero.svelte">
+      <TwicAbstract title="Hero image">
         <p>To display a hero image (or video) you need to :</p>
         <ul>
           <li>define the dimensions of TwicImg (or TwicVideo) especially it's height.</li>

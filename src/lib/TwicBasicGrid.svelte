@@ -7,7 +7,7 @@
 
 <div id="twic-basic-grid-container">
   <TwicWrapper gitHubUrl="src/lib/TwicBasicGrid.svelte">
-    <TwicAbstract title="A basic example" codeSandBoxUrl="src/lib/TwicBasicGrid.svelte">
+    <TwicAbstract title="A basic example">
       <p>
         TwicPics is a Responsive Image Service Solution (SaaS) that enables on-demand responsive
         image generation.

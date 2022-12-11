@@ -41,7 +41,7 @@
 
 <div id="twic-flip-card-container">
   <TwicWrapper gitHubUrl="src/lib/TwicFlipCards.svelte">
-    <TwicAbstract title="Flip cards" codeSandBoxUrl="src/lib/TwicFlipCards.svelte">
+    <TwicAbstract title="Flip cards">
       <p>Move your mouse over the images below.</p>
     </TwicAbstract>
     <div class="twic-grid">

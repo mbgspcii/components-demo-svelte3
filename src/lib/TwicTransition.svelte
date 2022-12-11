@@ -24,7 +24,7 @@
 <!-- demonstrates transition features -->
 <div id="twic-transition-container">
   <TwicWrapper gitHubUrl="src/lib/TwicTransition.svelte">
-    <TwicAbstract title="transition properties" codeSandBoxUrl="src/lib/TwicTransition.svelte">
+    <TwicAbstract title="transition properties">
       <p>
         <strong>
           The <dfn>transition</dfn> properties allow you to customize the effect used to reveal the image

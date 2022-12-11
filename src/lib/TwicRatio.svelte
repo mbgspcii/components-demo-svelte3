@@ -21,7 +21,7 @@
 <!-- demonstrates ratio features -->
 <div id="twic-ratio-container">
   <TwicWrapper gitHubUrl="src/lib/TwicRatio.svelte">
-    <TwicAbstract title="ratio property" codeSandBoxUrl="src/lib/TwicRatio.svelte">
+    <TwicAbstract title="ratio property">
       <p>
         <strong>
           The <dfn>ratio</dfn> property determines the value of the width/height ratio of the image display

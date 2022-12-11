@@ -33,10 +33,7 @@
 
 <div id="twic-state-container">
   <TwicWrapper gitHubUrl="src/lib/TwicState.svelte">
-    <TwicAbstract
-      title="state property and / or statechange event "
-      codeSandBoxUrl="src/lib/TwicState.svelte"
-    >
+    <TwicAbstract title="state property and / or statechange event ">
       <p>You can access to the loading state of your image or video by :</p>
       <ul>
         <li>
