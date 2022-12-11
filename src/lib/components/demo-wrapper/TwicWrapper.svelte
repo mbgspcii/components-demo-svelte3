@@ -10,7 +10,7 @@
   const logoAlt = `Svelte logo`;
   const redirect = `https://www.twicpics.com/docs/components/svelte-3?utm_source=github&utm_medium=organic&utm_campaign=components`;
   const GITHUB = `https://github.com/TwicPics/components-demo-svelte3/blob/main`;
-  const CODESANDBOX = `https://codesandbox.io/p/github/TwicPics/components-demo-svelte3/main?file=`;
+  const CODESANDBOX = `https://stackblitz.com/edit/github-wpprt7?file=`;
 
   $: _codeSandBoxUrl = `${CODESANDBOX}${gitHubUrl || 'README.md'}`;
   $: _gitHubUrl = gitHubUrl ? `${GITHUB}/blob/main/${gitHubUrl}` : GITHUB;
